@@ -4,8 +4,8 @@
 
 .container {
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
   width: 90%;
   height: 100%;
@@ -27,15 +27,118 @@
 
 .header {
   width: 100vw;
-  height: 15vh;
+  height: 10vh;
   box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);
 }
 
+.container {
+
+}
+
+.header__figure {
+
+}
+
+.header__image {
+  width: 40px;
+}
+
+.header__menu {
+  
+}
+
+.menu__option--header {
+
+}
+
+.menu__option--header svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.menu__option--header span {
+  display: none;
+}
+
 .main {
-  height: 70vh;
+  height: 75vh;
+}
+
+.container--flex-column {
+  flex-direction: column;
+}
+
+.section__about {
+
+}
+
+.about__info {
+
+}
+
+.about__info h2 {
+  font-size: var(--heading-2);
+}
+
+.about__details {
+
+}
+
+.section__hard__skills {
+
+}
+
+.hard__skills__info {
+
+}
+
+.hard__skills__info h2 {
+  font-size: var(--heading-2);
+}
+
+.hard__skills__details {
+
+}
+
+.section__soft__skills {
+
+}
+
+.soft__skills__info {
+
+}
+
+.soft__skills__info h2 {
+  font-size: var(--heading-2);
+}
+
+.soft__skills__details {
+
 }
 
 .footer {
   height: 15vh;
+}
+
+.container--space-around {
+  justify-content: space-around;
+}
+
+.footer__menu {
+
+}
+
+.menu__option--footer {
+
+}
+
+.menu__option--footer a {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  color: var(--gray-4);
+  text-decoration: none;
 }
 
