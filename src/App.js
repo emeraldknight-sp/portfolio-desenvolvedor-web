@@ -1,11 +1,13 @@
 import { useNavigate } from 'react-router-dom';
+
 import { AiOutlineHome } from 'react-icons/ai';
 import { MdOutlineWorkOutline } from 'react-icons/md';
 import { GrInfo } from 'react-icons/gr';
 import { BsTelephone } from 'react-icons/bs';
 import { MdOutlineMailOutline } from 'react-icons/md';
 import { IoLogoGithub, IoLogoLinkedin } from 'react-icons/io';
-import Logo from './assets/img/svg/branding.svg';
+
+import Logo from '../assets/img/svg/branding.svg';
 import './App.css';
 
 function App() {
@@ -89,19 +91,19 @@ function App() {
           <ul className="footer__menu">
             <li className="menu__option--footer">
               <a href='https://www.linkedin.com/in/davidalmeidadev/' target="_blank" rel="noreferrer">
-                <IoLogoLinkedin/> 
+                <IoLogoLinkedin /> 
                 <span>Linkedin</span>
               </a>
             </li>
             <li className="menu__option--footer"> 
               <a href='https://github.com/emeraldknight-sp/' target="_blank" rel="noreferrer">
-                <IoLogoGithub/> 
+                <IoLogoGithub /> 
                 <span>GitHub</span>
               </a>
             </li>
             <li className="menu__option--footer">
               <a href='mailto:contato.davidalmeida@outlook.com' target="_blank" rel="noreferrer">
-                <MdOutlineMailOutline/> 
+                <MdOutlineMailOutline /> 
                 <span>Email</span>
               </a>
             </li>
