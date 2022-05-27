@@ -65,6 +65,8 @@ export default createGlobalStyle`
     --secondary-color: #DF9938;
     --alternative-color: #AC2C34;
 
+    --background-color-light: #FFFFFF;
+
     --gray-4: #212121;	
     --gray-3: #3E3E3E;
     --gray-2: #5C5C5C;
