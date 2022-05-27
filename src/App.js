@@ -12,6 +12,42 @@ import './App.css';
 
 function App() {
 
+  const hardSkills = [
+    "Excalidraw",
+    "Photoshop",
+    "Linux Ubuntu e Windows 10",
+    "HTML5",
+    "CSS 3",
+    "Javascript ES6",
+    "DOM",
+    "CSS BEM",
+    "CSS Grid Layout",
+    "CSS Flexbox",
+    "HOF's",
+    "Fetch API",
+    "Async/Await",
+    "API RESTFul",
+    "ReactJS",
+    "Componentização (ReactJS)",
+  ];
+
+  const softSkills = [
+    "Comunicação eficaz",
+    "Gestão de tempo",
+    "Solução de problemas",
+    "Trabalho em equipe",
+    "Flexiblidade e adaptabilidade",
+    "Organização e planejamento",
+    "Autoconfiança",
+    "Atitude positiva",
+    "Escrita",
+    "Empatia",
+    "Resiliência",
+    "Colaboração",
+    "Liderança",
+    "Visão geral",
+  ];
+
   const handleClick = () => {
     console.log("Oi")
   }
