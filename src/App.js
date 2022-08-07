@@ -92,15 +92,16 @@ function App() {
         {/* ABOUT */}
         <section className="section__about">
           <article className="about__info">
-            <h2>Sobre</h2>
+            <h5>Sobre</h5>
             <div>
               <p>
                 Formando em Ciência da Computação desde 2020, iniciei meus
                 estudos em 2014 quando fiz o meu primeiro curso da área cursando
                 um técnico em informática, minha admiração por TI veio muito
                 antes disso por ser uma área onde eu poderia atuar desenvolvendo
-                ideias e soluções que poderiam ser úteis para as pessoas. Depois
-                de aprender sobre as noções da informática, procurei entender
+                ideias e soluções que poderiam ser úteis para as pessoas.
+              </p>
+              <p>Depois de aprender sobre as noções da informática, procurei entender
                 conceitos mais técnicos e detalhados durante o período em que
                 frequentei a faculdade qual das vertentes me chamavam mais
                 atenção para poder continuar os meus estudos, sem sombra de
@@ -121,14 +122,16 @@ function App() {
             </div>
           </article>
           <article className="about__details">
-            DETALHES
+            <figure className='about__details__figure'>
+              <img className='figure__img' src='../assets/img/png/kenzie-logo.png' alt='kenzie logo' />
+            </figure>
           </article>
         </section>
 
         {/* HARD SKILLS */}
         <section className="section__hard__skills">
           <article className="hard__skills__info">
-            <h2>Hard Skills</h2>
+            <h5>Hard Skills</h5>
             <div className="skills__box">
               <ul className="skills__box__list">
                 {hardSkills.map((skill) => (
@@ -145,9 +148,9 @@ function App() {
         {/* SOFT SKILLS */}
         <section className="section__soft__skills">
           <article className="soft__skills__info">
-            <h2 className="soft__skills__title">Soft Skills</h2>
+            <h5 className="soft__skills__title">Soft Skills</h5>
             <div className="skills__box">
-              <ul className="skills_box__list">
+              <ul className="skills__box__list">
                 {softSkills.map((skill) => (
                   <li className="list__item">{skill}</li>
                 ))}
@@ -155,7 +158,7 @@ function App() {
             </div>
           </article>
           <article className="soft__skills__details">
-            <span>deatils</span>
+            <span>details</span>
           </article>
         </section>
         </div>

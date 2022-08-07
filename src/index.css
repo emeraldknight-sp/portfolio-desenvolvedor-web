@@ -53,5 +53,21 @@ button, textarea, input, body, select {
 }
 
 :root {
-  --font-family: 'Lato', serif;
+  --font-family: 'Lato', sans-serif;
+
+	--heading-1: 2.75rem;
+	--heading-2: 2.25rem;
+	--heading-3: 2rem;
+	--heading-4: 1.75rem;
+	--heading-5: 1.5rem;
+	--heading-6: 1.25rem;
+	--heading-7: 1rem;
+
+	--body-1-400: 1rem;
+	--body-1-400: 0.875rem;
+
+	--button-big-text: 1rem;
+	--button-medium-text: 0.875rem;
+	--input-placeholder: 1rem;
+	--input-label: 0.875rem;
 }
