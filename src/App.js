@@ -7,7 +7,8 @@ import { BsTelephone } from 'react-icons/bs';
 import { MdOutlineMailOutline } from 'react-icons/md';
 import { IoLogoGithub, IoLogoLinkedin } from 'react-icons/io';
 
-import Logo from '../assets/img/svg/branding.svg';
+import Logo from './assets/img/svg/branding.svg';
+
 import './App.css';
 
 function App() {
@@ -119,7 +120,9 @@ function App() {
               </p>
             </div>
           </article>
-          <article className="about__details"></article>
+          <article className="about__details">
+            DETALHES
+          </article>
         </section>
 
         {/* HARD SKILLS */}
@@ -161,7 +164,7 @@ function App() {
       {/* FOOTER */}
       <footer className="footer">
         <div className="container container--space-around container--flex-column">
-          <p>Desenvolvido por David Almeida</p>
+          <p>Desenvolvido por </p>
           <ul className="footer__menu">
             <li className="menu__option--footer">
               <a href='https://www.linkedin.com/in/davidalmeidadev/' target="_blank" rel="noreferrer">
