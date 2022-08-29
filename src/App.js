@@ -7,9 +7,10 @@ import { BsTelephone } from 'react-icons/bs';
 import { MdOutlineMailOutline } from 'react-icons/md';
 import { IoLogoGithub, IoLogoLinkedin } from 'react-icons/io';
 
-import Logo from './assets/img/svg/branding.svg';
+import Logo from './images/svg/branding.svg';
 
-import './App.css';
+import './styles/style.css';
+import Header from './components/Header/Header';
 
 function App() {
 
@@ -58,7 +59,7 @@ function App() {
   return (
     <div className="large__container">
       
-      {/* HEADER */}
+      {/* HEADER
       <header className="header">
         <div className="container">
           <figure className="header__figure">
@@ -83,7 +84,9 @@ function App() {
             </li>
           </ul>
         </div>
-      </header>
+      </header> */}
+
+      <Header />
 
       {/* MAIN */}
       <main className="main">
@@ -165,7 +168,7 @@ function App() {
       </main>
 
       {/* FOOTER */}
-      <footer className="footer">
+      {/* <footer className="footer">
         <div className="container container--space-around container--flex-column">
           <p>Desenvolvido por </p>
           <ul className="footer__menu">
@@ -190,7 +193,7 @@ function App() {
           </ul>
           <span>Copyright&copy; 2022</span>
         </div>
-      </footer>
+      </footer> */}
     </div>
   );
 }
