@@ -58,7 +58,7 @@ const Homepage = () => {
             <div>
               <p>
                 Formando em Ciência da Computação desde 2020, iniciei meus
-                estudos em 2014 quando fiz o meu primeiro curso da área cursando
+                estudos na área de TI no ano de 2014 quando fiz o meu primeiro curso da área cursando
                 um técnico em informática, minha admiração por TI veio muito
                 antes disso por ser uma área onde eu poderia atuar desenvolvendo
                 ideias e soluções que poderiam ser úteis para as pessoas.
