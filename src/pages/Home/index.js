@@ -1,6 +1,8 @@
 import { useNavigate } from "react-router-dom";
+import { CardProjects } from "../../components/Cards";
 import Footer from "../../components/Footer/";
 import Header from "../../components/Header/";
+import { ListHardSkills, ListSoftSkills } from "../../components/Lists";
 import Main from "../../components/Main/";
 
 const Homepage = () => {
@@ -13,11 +15,6 @@ const Homepage = () => {
 
   const hardSkills = [
     "Excalidraw",
-    "Photoshop",
-    "Linux Ubuntu e Windows 10",
-    "HTML5",
-    "CSS 3",
-    "Javascript ES6",
     "DOM",
     "CSS BEM",
     "CSS Grid Layout",
@@ -26,33 +23,13 @@ const Homepage = () => {
     "Fetch API",
     "Async/Await",
     "API RESTFul",
-    "ReactJS",
-    "Componentização (ReactJS)",
   ];
-
-  const softSkills = [
-    "Comunicação eficaz",
-    "Gestão de tempo",
-    "Solução de problemas",
-    "Trabalho em equipe",
-    "Flexiblidade e adaptabilidade",
-    "Organização e planejamento",
-    "Autoconfiança",
-    "Atitude positiva",
-    "Escrita",
-    "Empatia",
-    "Resiliência",
-    "Colaboração",
-    "Liderança",
-    "Visão geral",
-  ];
-
 
   return (
     <div className="large__container">
       <Header />
       <Main props={"container container--flex-column container--space-around"}>
-      <section className="section__about">
+        <section className="section__about">
           <article className="about__info">
             <h5>Sobre</h5>
             <div>
@@ -63,13 +40,19 @@ const Homepage = () => {
                 antes disso por ser uma área onde eu poderia atuar desenvolvendo
                 ideias e soluções que poderiam ser úteis para as pessoas.
               </p>
-              <button onClick={() => handleClick("/about")}>Saiba mais</button>
+              <button className="button" onClick={() => handleClick("/about")}>Saiba mais</button>
             </div>
           </article>
-          <article className="about__details">
-            <figure className='about__details__figure'>
-              <img className='figure__img' src='../assets/img/png/kenzie-logo.png' alt='kenzie logo' />
-            </figure>
+        </section>
+
+        {/* PROJECTS */}
+        <section className="section__projects">
+          <article className="projects__info">
+            <h5>Projetos</h5>
+            <div className="skills__box">
+              <CardProjects />
+            </div>
+            <button className="button" onClick={() => handleClick("/projects")}>Saiba mais</button>
           </article>
         </section>
 
@@ -78,32 +61,19 @@ const Homepage = () => {
           <article className="hard__skills__info">
             <h5>Hard Skills</h5>
             <div className="skills__box">
-              <ul className="skills__box__list">
-                {hardSkills.map((skill) => (
-                  <li className="list__item">{skill}</li>
-                ))}
-              </ul>
+              <ListHardSkills />
             </div>
-          </article>
-          <article className="hard__skills__details">
-            <span>details</span>
+            <button className="button" onClick={() => handleClick("/tecnologies")}>Saiba mais</button>
           </article>
         </section>
 
         {/* SOFT SKILLS */}
         <section className="section__soft__skills">
           <article className="soft__skills__info">
-            <h5 className="soft__skills__title">Soft Skills</h5>
+            <h5>Soft Skills</h5>
             <div className="skills__box">
-              <ul className="skills__box__list">
-                {softSkills.map((skill) => (
-                  <li className="list__item">{skill}</li>
-                ))}
-              </ul>
+              <ListSoftSkills />
             </div>
-          </article>
-          <article className="soft__skills__details">
-            <span>details</span>
           </article>
         </section>
       </Main>
