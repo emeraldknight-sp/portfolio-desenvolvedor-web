@@ -48,8 +48,12 @@
 }
 
 .menu__option--header {
-
+  cursor: pointer;
 }
+
+/* .menu__option--header:hover {
+  zoom: 1.25;
+} */
 
 .menu__option--header svg {
   width: 1.5rem;
@@ -91,21 +95,17 @@
   gap: 10px;
 }
 
-.about__details {
-
+.section__hard__skills, .section__soft__skills, .section__projects {
+  width: 100%;
 }
 
-.section__hard__skills {
-
-}
-
-.hard__skills__info, .soft__skills__info {
+.hard__skills__info, .soft__skills__info, .projects__info {
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
 
-.hard__skills__info h5 {
+.hard__skills__info h5, .soft__skills__info h5, .projects__info h5 {
   font-size: var(--heading-5);
 }
 
@@ -115,15 +115,39 @@
 
 .skills__box__list {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  overflow-x: scroll;
   gap: 10px;
 }
 
 .list__item {
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: transparent;
+  min-width: 200px;
+  height: 200px;
 }
 
-.hard__skills__details {
+.list__item span {
+  text-align: center;
+}
+
+.list__item figure {
+  width: 100px;
+}
+
+.list__item img {
+  width: 100px;
+}
+
+.list__item div {
 
 }
 
@@ -132,14 +156,6 @@
 }
 
 .soft__skills__info {
-
-}
-
-.soft__skills__info h5 {
-  font-size: var(--heading-5);
-}
-
-.soft__skills__details {
 
 }
 
@@ -168,5 +184,18 @@
   gap: 5px;
   color: var(--gray-4);
   text-decoration: none;
+}
+
+.button {
+  background: var(--primary-color);
+  font-family: "Lato", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--gray-5);
+  padding: 10px 10px;
+  border: 1px solid var(--primary-color);
+  border-radius: 5px;
+  cursor: pointer;
 }
 

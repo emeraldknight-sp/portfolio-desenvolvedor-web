@@ -52,6 +52,26 @@ button, textarea, input, body, select {
   font-family: var(--font-family);
 }
 
+*::-webkit-scrollbar {
+  width: 5px;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--secondary-color);
+	border: 3px solid var(--secondary-color);
+	border-radius: 15px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+*::-webkit-scrollbar-thumb {
+	height: 3px;
+	width: 40px;
+  background-color: var(--primary-color);
+  border: 3px solid var(--secondary-color);
+  border-radius: 15px;
+}
+
 :root {
   --font-family: 'Lato', sans-serif;
 
@@ -70,4 +90,19 @@ button, textarea, input, body, select {
 	--button-medium-text: 0.875rem;
 	--input-placeholder: 1rem;
 	--input-label: 0.875rem;
+
+	--font-family: "Lato", sans-serif;
+	
+	--primary-color: #1DDD40;
+	--secondary-color: aliceblue;
+
+	--black-fixed: #000000;
+	--white-fiexed: #ffffff;
+
+	--gray-5: #0B0D0D;
+	--gray-4: #212529;
+	--gray-3: #495057;
+	--gray-2: #868E96;
+	--gray-1: #ADB5BD;
+	--gray-0: #CED4DA;
 }
