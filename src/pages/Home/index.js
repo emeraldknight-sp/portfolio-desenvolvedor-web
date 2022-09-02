@@ -1,36 +1,39 @@
 import { useNavigate } from "react-router-dom";
 import { CardProjects } from "../../components/Cards";
 import Footer from "../../components/Footer/";
+import Container from "../../components/Container/";
 import Header from "../../components/Header/";
 import { ListHardSkills, ListSoftSkills } from "../../components/Lists";
 import Main from "../../components/Main/";
 
 const Homepage = () => {
 
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
   const handleClick = (page) => {
-    navigate(`${page}`)
-  }
+    navigate(`${page}`);
+  };
 
-  const hardSkills = [
-    "Excalidraw",
-    "DOM",
-    "CSS BEM",
-    "CSS Grid Layout",
-    "CSS Flexbox",
-    "HOF's",
-    "Fetch API",
-    "Async/Await",
-    "API RESTFul",
-  ];
+  // const hardSkills = [
+  //   "Excalidraw",
+  //   "DOM",
+  //   "CSS BEM",
+  //   "CSS Grid Layout",
+  //   "CSS Flexbox",
+  //   "HOF's",
+  //   "Fetch API",
+  //   "Async/Await",
+  //   "API RESTFul",
+  // ];
 
   return (
     <div className="large__container">
       <Header />
-      <Main props={"container container--flex-column container--space-around"}>
+      <Main>
+
+        {/* ABOUT */}
         <section className="section__about">
-          <article className="about__info">
+          <Container className="container">
             <h5>Sobre</h5>
             <div>
               <p>
@@ -40,46 +43,53 @@ const Homepage = () => {
                 antes disso por ser uma área onde eu poderia atuar desenvolvendo
                 ideias e soluções que poderiam ser úteis para as pessoas.
               </p>
-              <button className="button" onClick={() => handleClick("/about")}>Saiba mais</button>
             </div>
-          </article>
+            <div className="div__button">
+              <button className="button button--primary button--read-more" onClick={() => handleClick("/about")}>Saiba mais</button>
+            </div>
+          </Container>
         </section>
 
         {/* PROJECTS */}
         <section className="section__projects">
-          <article className="projects__info">
+          <Container className="container">
             <h5>Projetos</h5>
             <div className="skills__box">
               <CardProjects />
             </div>
-            <button className="button" onClick={() => handleClick("/projects")}>Saiba mais</button>
-          </article>
+            <div className="div__button">
+              <button className="button button--primary button--read-more" onClick={() => handleClick("/projects")}>Saiba mais</button>
+            </div>
+          </Container>
         </section>
 
         {/* HARD SKILLS */}
         <section className="section__hard__skills">
-          <article className="hard__skills__info">
+          <Container className="container">
             <h5>Hard Skills</h5>
             <div className="skills__box">
               <ListHardSkills />
             </div>
-            <button className="button" onClick={() => handleClick("/tecnologies")}>Saiba mais</button>
-          </article>
+            <div className="div__button">
+              <button className="button button--primary button--read-more" onClick={() => handleClick("/tecnologies")}>Saiba mais</button>
+            </div>
+          </Container>
         </section>
 
         {/* SOFT SKILLS */}
         <section className="section__soft__skills">
-          <article className="soft__skills__info">
+          <Container className="container">
             <h5>Soft Skills</h5>
             <div className="skills__box">
               <ListSoftSkills />
             </div>
-          </article>
+          </Container>
         </section>
+
       </Main>
       <Footer />
     </div>
   )
-}
+};
 
 export default Homepage;

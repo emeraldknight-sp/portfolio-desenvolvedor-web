@@ -44,7 +44,7 @@ const About = () => {
                 um pouco mais sobre os bastidores de como funcionam as regras de
                 negócios do back-end!
               </p>
-              <button className="button" onClick={() => handleClick("/me")}>Voltar à página inicial</button>
+              <button className="button button--primary" onClick={() => handleClick("/me")}>Voltar à página inicial</button>
             </div>
           </article>
         </section>
