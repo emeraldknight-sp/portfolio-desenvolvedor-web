@@ -1,11 +1,12 @@
 import { MdOutlineMailOutline } from 'react-icons/md';
 import { IoLogoGithub, IoLogoLinkedin } from 'react-icons/io';
+import Container from '../Container';
 
 const Footer = () => {
   return (
     <footer className="footer">
-      <div className="container container--space-around container--flex-column">
-        <p>Desenvolvido por </p>
+      <Container>
+        <p>Desenvolvido por David Almeida</p>
         <ul className="footer__menu">
           <li className="menu__option--footer">
             <a href='https://www.linkedin.com/in/davidalmeidadev/' target="_blank" rel="noreferrer">
@@ -27,7 +28,7 @@ const Footer = () => {
           </li>
         </ul>
         <span>Copyright&copy; 2022</span>
-      </div>
+      </Container>
     </footer>
   )
 }

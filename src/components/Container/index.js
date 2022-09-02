@@ -1,9 +1,12 @@
 
-const Container = ({ children }) => {
+const Container = ({ children, ...rest }) => {
+
+  const {className} = rest
+
   return (
-    <div className="container container--flex-column container--space-around">
+    <article className={className}>
       {children}
-    </div>
+    </article>
   )
 }
 
