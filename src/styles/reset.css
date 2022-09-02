@@ -83,11 +83,12 @@ button, textarea, input, body, select {
 	--heading-6: 1.25rem;
 	--heading-7: 1rem;
 
-	--body-1-400: 1rem;
-	--body-1-400: 0.875rem;
+	--body-content: 1rem;
+	--caption: 0.875rem;
 
 	--button-big-text: 1rem;
 	--button-medium-text: 0.875rem;
+	
 	--input-placeholder: 1rem;
 	--input-label: 0.875rem;
 
@@ -97,7 +98,7 @@ button, textarea, input, body, select {
 	--secondary-color: aliceblue;
 
 	--black-fixed: #000000;
-	--white-fiexed: #ffffff;
+	--white-fixed: #ffffff;
 
 	--gray-5: #0B0D0D;
 	--gray-4: #212529;
