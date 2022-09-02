@@ -1,0 +1,89 @@
+@media (min-width: 320px) {
+  /* HEADER */
+  .container__logo {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .container__logo h2 {
+    display: none;
+  }
+
+  .skills__box__list {
+    width: 100%;
+  }
+
+  /* BUTTON */
+  .button {
+    display: flex;
+    flex-direction: column;
+    transition: background 0.5s;
+  }
+
+  .button:active {
+    background-color: var(--gray-5);
+    color: var(--primary-color);
+    border: 1px solid var(--gray-5);
+    filter: brightness(0.7);
+  }
+
+  .button:hover {
+    filter: none;
+  }
+
+  .button span {
+    display: none;
+  }
+
+  .button--icon {
+    width: 20%;
+  }
+
+  .button--read-more {
+    width: 100%;
+  }
+}
+
+@media (min-width: 425px) {
+  /* HEADER */
+  .container__logo h2 {
+    display: none;
+  }
+
+  /* CARDS */
+  .list__item {
+    min-width: 175px;
+  }
+
+  /* BUTTON */
+  .button--read-more {
+    width: 40%;
+  }
+}
+
+@media (min-width: 768px) {
+  /* CARDS */
+  .list__item {
+    min-width: 175px;
+  }
+
+  /* BUTTON */
+  .div__button {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+  }
+
+  .button--read-more {
+    width: 30%;
+  }
+}
+
+@media (min-width: 1024px) {
+  /* BUTTON */
+  .button--read-more {
+    width: 20%;
+  }
+}
