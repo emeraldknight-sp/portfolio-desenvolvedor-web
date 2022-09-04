@@ -5,7 +5,7 @@
     flex-direction: row;
   }
 
-  .container__logo h2 {
+  .container__logo h4 {
     display: none;
   }
 
@@ -52,7 +52,7 @@
 
   /* CARDS */
   .list__item {
-    min-width: 175px;
+    min-width: 55%;
   }
 
   /* BUTTON */
@@ -62,9 +62,27 @@
 }
 
 @media (min-width: 768px) {
+  /* HEADER */
+  .container__logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .menu__option--header svg {
+    width: var(--heading-5);
+    height: var(--heading-5);
+  }
+
+  .menu__option--header span {
+    display: unset;
+  }
+
   /* CARDS */
   .list__item {
-    min-width: 175px;
+    min-width: 35%;
   }
 
   /* BUTTON */
@@ -82,6 +100,17 @@
 }
 
 @media (min-width: 1024px) {
+  /* HEADER */
+  .container__logo h4 {
+    display: unset;
+    font-size: var(--heading-4);
+  }
+
+  /* CARDS */
+  .list__item {
+    min-width: 25%;
+  }
+
   /* BUTTON */
   .button--read-more {
     width: 20%;

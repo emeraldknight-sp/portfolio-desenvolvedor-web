@@ -94,7 +94,8 @@ button, textarea, input, body, select {
 
 	--font-family: "Lato", sans-serif;
 	
-	--primary-color: #1DDD40;
+	/* --primary-color: #1DDD40; */
+	--primary-color: #22c25f;
 	--secondary-color: aliceblue;
 
 	--black-fixed: #000000;
