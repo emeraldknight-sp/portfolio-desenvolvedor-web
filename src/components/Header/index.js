@@ -26,6 +26,7 @@ const Header = () => {
   const handleClick = (page) => {
     toast.error("Página em desenvolvimento!");
     return;
+    // eslint-disable-next-line no-unreachable
     navigate(`${page}`)
   };
 

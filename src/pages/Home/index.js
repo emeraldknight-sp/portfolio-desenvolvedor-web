@@ -6,6 +6,8 @@ import Header from "../../components/Header/";
 import { ListHardSkills, ListSoftSkills } from "../../components/Lists";
 import Main from "../../components/Main/";
 
+// import toast from "react-hot-toast";
+
 const Homepage = () => {
 
   const navigate = useNavigate();
@@ -31,13 +33,22 @@ const Homepage = () => {
       <Header />
       <Main>
 
+        <section className="section__welcome">
+          <Container className="container">
+            <h1>
+              Bem-vindo ao meu portfólio!
+            </h1>
+            <h3>O portfólio de um desenvolvedor em desenvolvimento.</h3>
+          </Container>
+        </section>
+
         {/* ABOUT */}
         <section className="section__about">
           <Container className="container">
             <h5>Sobre</h5>
             <div>
               <p>
-                Formando em Ciência da Computação desde 2020, iniciei meus
+                Formado em Ciência da Computação desde 2020, iniciei meus
                 estudos na área de TI no ano de 2014 quando fiz o meu primeiro curso da área cursando
                 um técnico em informática, minha admiração por TI veio muito
                 antes disso por ser uma área onde eu poderia atuar desenvolvendo
