@@ -27,7 +27,8 @@ const Footer = () => {
             </a>
           </li>
         </ul>
-        <span>Copyright&copy; 2022</span>
+        <span>contato.davidalmeida@outlook.com</span>
+        {/* <span>Copyright&copy; 2022</span> */}
       </Container>
     </footer>
   )
