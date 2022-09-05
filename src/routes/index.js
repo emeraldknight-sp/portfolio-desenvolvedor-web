@@ -9,7 +9,7 @@ import Homepage from "../pages/Home/";
 const Root = () => {
   return (
     <Routes>
-      <Route path="/me" element={<Homepage />} />
+      <Route path="/" element={<Homepage />} />
       {/* <Route path="/projects" element={<Projects />} />
       <Route path="/tecnologies" element={<Tecnologies />} />
       <Route path="/about" element={<About />} />
