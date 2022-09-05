@@ -221,6 +221,7 @@
 
 .item--project p {
   font-size: var(--body-content);
+  text-align: center;
 }
 
 /* FOOTER */
