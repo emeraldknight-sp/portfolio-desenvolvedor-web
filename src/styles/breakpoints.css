@@ -5,10 +5,7 @@
     flex-direction: row;
   }
 
-  .container__logo h4 {
-    display: none;
-  }
-
+  /* MAIN */
   .skills__box__list {
     width: 100%;
   }
@@ -20,12 +17,12 @@
     transition: background 0.5s;
   }
 
-  .button:active {
+  /* .button:active {
     background-color: var(--gray-5);
-    color: var(--primary-color);
+    color: var(--white-fixed);
     border: 1px solid var(--gray-5);
     filter: brightness(0.7);
-  }
+  } */
 
   .button:hover {
     filter: none;
@@ -42,42 +39,53 @@
   .button--read-more {
     width: 100%;
   }
+
+  /* SCROLL TO TOP */
+  .scroll_to_top {
+    position: relative;  
+    top: 25px;
+    left: 0;
+    z-index: 1;
+  }
 }
 
 @media (min-width: 425px) {
   /* HEADER */
-  .container__logo h2 {
-    display: none;
-  }
 
   /* CARDS */
   .list__item {
     min-width: 55%;
   }
 
+  /* FOOTER */
+  .footer article {
+    height: 100%;
+    gap: unset;
+  }
+
   /* BUTTON */
   .button--read-more {
     width: 40%;
+  }
+
+  /* BUTTON SCROLL TOP */
+  .scroll_to_top {
+    position: relative;  
+    top: 97px;
+    left: 40%;
+    z-index: 1;
   }
 }
 
 @media (min-width: 768px) {
   /* HEADER */
-  .container__logo {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-  }
-
-  .menu__option--header svg {
-    width: var(--heading-5);
-    height: var(--heading-5);
-  }
-
   .menu__option--header span {
     display: unset;
+  }
+
+  /* MAIN */
+  .section__welcome h3 {
+    text-align: center;
   }
 
   /* CARDS */
@@ -85,15 +93,7 @@
     min-width: 35%;
   }
 
-  /* BUTTON */
-  .div__button {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-    width: 100%;
-  }
-
+  /* MAIN */
   .button--read-more {
     width: 30%;
   }
@@ -101,9 +101,12 @@
 
 @media (min-width: 1024px) {
   /* HEADER */
-  .container__logo h4 {
-    display: unset;
-    font-size: var(--heading-4);
+  .button--menu {
+    display: none;
+  }
+
+  .header__menu {
+    display: flex;
   }
 
   /* CARDS */
