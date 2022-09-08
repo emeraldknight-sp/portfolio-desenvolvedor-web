@@ -55,7 +55,7 @@ const Homepage = () => {
                 ideias e soluções que poderiam ser úteis para as pessoas.
               </p>
             </div>
-            <div className="div__button">
+            <div className="skills__button">
               <button className="button button--primary button--read-more" onClick={() => handleClick("/about")}>Saiba mais</button>
             </div>
           </Container>
@@ -68,7 +68,7 @@ const Homepage = () => {
             <div className="skills__box">
               <CardProjects />
             </div>
-            <div className="div__button">
+            <div className="skills__button">
               <button className="button button--primary button--read-more" onClick={() => handleClick("/projects")}>Saiba mais</button>
             </div>
           </Container>
@@ -81,7 +81,7 @@ const Homepage = () => {
             <div className="skills__box">
               <ListHardSkills />
             </div>
-            <div className="div__button">
+            <div className="skills__button">
               <button className="button button--primary button--read-more" onClick={() => handleClick("/tecnologies")}>Saiba mais</button>
             </div>
           </Container>
