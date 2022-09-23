@@ -7,7 +7,7 @@ import { Button } from '../../components/Button'
 
 import './About.style.css'
 
-// import ProfileIcon from '../../images/png/profile-icon.png'
+import ProfileIcon from '../../images/png/profile-icon.png'
 
 export const About = () => {
   const navigate = useNavigate()
@@ -58,8 +58,8 @@ export const About = () => {
               <figure className="about__figure">
                 <img
                   className="about__image"
-                  // src={ProfileIcon}
-                  src="https://www.petlove.com.br/images/breeds/193446/profile/original/pinscher-p.jpg?1532539343"
+                  src={ProfileIcon}
+                  // src="https://www.petlove.com.br/images/breeds/193446/profile/original/pinscher-p.jpg?1532539343"
                   alt="Foto de perfil"
                 />
                 <figcaption>
