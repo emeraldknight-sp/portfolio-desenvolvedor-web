@@ -12,12 +12,15 @@ import { CardProject } from '../../components/CardProject/CardProject'
 import { hardSkills, projects, softSkills } from './Home.mock'
 
 import './Home.style.css'
+import toast from 'react-hot-toast'
 
 export const Homepage = () => {
   const navigate = useNavigate()
 
   const handleClick = (page) => {
-    navigate(`${page}`)
+    page === '/tools' || page === '/contact'
+      ? toast.error('Página em desenvolvimento')
+      : navigate(`${page}`)
   }
 
   return (
@@ -94,9 +97,7 @@ export const Homepage = () => {
               ))}
             </div>
             <div className="skills__button">
-              <Button onClick={() => handleClick('/tecnologies')}>
-                Saiba mais
-              </Button>
+              <Button onClick={() => handleClick('/tools')}>Saiba mais</Button>
             </div>
           </Container>
         </section>
