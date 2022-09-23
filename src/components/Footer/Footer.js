@@ -1,10 +1,10 @@
-import { MdOutlineKeyboardArrowUp, MdOutlineMailOutline } from 'react-icons/md'
+import { MdOutlineKeyboardArrowUp } from 'react-icons/md'
 import { IoLogoGithub, IoLogoInstagram, IoLogoLinkedin } from 'react-icons/io'
 
 import { Container } from '../Container'
 import './Footer.style.css'
 
-const Footer = () => {
+export const Footer = () => {
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' })
   }
@@ -36,7 +36,7 @@ const Footer = () => {
               <span>GitHub</span>
             </a>
           </li>
-          <li>
+          {/* <li>
             <a
               className="footer__menu__social"
               href="mailto:contato.davidalmeida@outlook.com"
@@ -46,7 +46,7 @@ const Footer = () => {
               <MdOutlineMailOutline className="menu__social__icon" />
               <span>Email</span>
             </a>
-          </li>
+          </li> */}
           <li>
             <a
               className="footer__menu__social"
@@ -71,5 +71,3 @@ const Footer = () => {
     </footer>
   )
 }
-
-export default Footer

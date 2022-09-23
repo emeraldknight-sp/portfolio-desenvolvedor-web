@@ -1,20 +1,19 @@
+import { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
+
 import { AiOutlineHome } from 'react-icons/ai'
 import { MdOutlineWorkOutline } from 'react-icons/md'
 import { BsTelephone } from 'react-icons/bs'
 import { FiTool } from 'react-icons/fi'
-
 import { GrClose, GrInfo } from 'react-icons/gr'
 import { GrMenu } from 'react-icons/gr'
 
 import Logo from '../../images/png/icons8-esmeralda-48.png'
-import { useNavigate } from 'react-router-dom'
 
-import { useState } from 'react'
-
-import './Header.style.css'
 import { Container } from '../Container'
+import './Header.style.css'
 
-const Header = () => {
+export const Header = () => {
   const navigate = useNavigate()
 
   const [open, setOpen] = useState(false)
@@ -64,7 +63,7 @@ const Header = () => {
             onClick={() => handleClick('/about')}
           >
             <GrInfo />
-            <span>Habilidades</span>
+            <span>Sobre</span>
           </li>
           <li
             className="menu__option--header"
@@ -78,5 +77,3 @@ const Header = () => {
     </header>
   )
 }
-
-export default Header
