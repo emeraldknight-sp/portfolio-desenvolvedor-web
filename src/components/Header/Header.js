@@ -12,6 +12,7 @@ import Logo from '../../images/png/icons8-esmeralda-48.png'
 
 import { Container } from '../Container'
 import './Header.style.css'
+import toast from 'react-hot-toast'
 
 export const Header = () => {
   const navigate = useNavigate()
@@ -21,7 +22,9 @@ export const Header = () => {
   const [icon, setIcon] = useState(<GrMenu />)
 
   const handleClick = (page) => {
-    navigate(`${page}`)
+    page === '/tools' || page === '/contact'
+      ? toast.error('Em desenvolvimento!')
+      : navigate(`${page}`)
   }
 
   // eslint-disable-next-line no-unused-vars
@@ -53,7 +56,7 @@ export const Header = () => {
           </li>
           <li
             className="menu__option--header"
-            onClick={() => handleClick('/tecnologies')}
+            onClick={() => handleClick('/tools')}
           >
             <FiTool />
             <span>Ferramentas</span>
