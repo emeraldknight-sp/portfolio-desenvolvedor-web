@@ -7,7 +7,7 @@ import { Footer } from '../../components/Footer'
 
 import { Button } from '../../components/Button'
 import { CardSkill } from '../../components/CardSkill'
-import { CardProjects } from '../../components/CardProject/CardProject'
+import { CardProject } from '../../components/CardProject/CardProject'
 
 import { hardSkills, projects, softSkills } from './Home.mock'
 
@@ -60,7 +60,7 @@ export const Homepage = () => {
             <h3 className="projects__title">Projetos</h3>
             <div className="skills__box">
               {projects.map((skill) => (
-                <CardProjects
+                <CardProject
                   key={skill.id}
                   title={skill.title}
                   image={skill.image}

@@ -1,0 +1,64 @@
+.card-project {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  min-width: 300px;
+  padding: 20px 0;
+}
+
+.card-project__top {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.card-project__top__title {
+  font-size: var(--heading-6);
+  text-align: center;
+}
+
+.card-project__top__figure {
+  width: 100%;
+}
+
+.card-project__top__image {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.card-project__bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+
+.card-project__bottom__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.card-project__bottom__tecnologies {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.card-project__bottom__status {
+  display: flex;
+  gap: 8px;
+}
+
+.card-project__buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
