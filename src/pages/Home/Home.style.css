@@ -1,0 +1,69 @@
+.section__welcome,
+.section__about,
+.section__hard__skills,
+.section__soft__skills,
+.section__projects {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  width: 100%;
+  padding: 15px 0;
+}
+
+.section__welcome .container,
+.section__about .container,
+.section__hard__skills .container,
+.section__soft__skills .container,
+.section__projects .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80%;
+  gap: 24px;
+}
+
+.about__title,
+.hard__skills__title,
+.soft__skills__title,
+.projects__title {
+  font-size: var(--heading-3);
+  font-weight: bolder;
+}
+
+.section__welcome {
+  background-color: var(--primary-color);
+  background: radial-gradient(
+    circle,
+    rgba(34, 194, 95, 1) 19%,
+    rgba(34, 194, 133, 1) 100%
+  );
+  height: 60vh;
+  color: var(--white-fixed);
+}
+
+.welcome__title {
+  font-size: var(--heading-1);
+  font-weight: bolder;
+}
+
+.welcome__subtitle {
+  font-size: var(--heading-4);
+  font-weight: bolder;
+}
+
+.skills__box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  gap: 20px;
+}
+
+.skills__button {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+}
