@@ -1,17 +1,33 @@
-.section__about--page .container {
+.about__content {
   display: flex;
   flex-direction: column;
+  gap: 40px;
+  width: 100%;
+  line-height: 24px;
+}
+
+.about__details {
+  display: flex;
+  flex-direction: row;
   align-items: center;
-  gap: 80px;
-  padding: 50px 0;
+  justify-content: space-between;
 }
 
 .about__text {
   display: flex;
   flex-direction: column;
-  gap: 15px;
-  max-width: 75%;
+  gap: 24px;
+  width: 100%;
   line-height: 24px;
+}
+
+.about__text p {
+  max-width: 80%;
+}
+
+.about__button {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .about__picture {
@@ -33,8 +49,8 @@
   border-radius: 50%;
 }
 
-@media (min-width: 768px) {
-  .section__about--page .container {
-    flex-direction: row;
-  }
+.section__about__cards {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
