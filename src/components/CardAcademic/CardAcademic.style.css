@@ -1,6 +1,6 @@
 .card-academic {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   gap: 24px;
 }
@@ -21,10 +21,29 @@
 .card-academic__details {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 16px;
+}
+
+.card-academic__details p {
+  text-align: center;
 }
 
 .card-academic__title {
   font-size: var(--heading-6);
   font-weight: 600;
+}
+
+@media (min-width: 768px) {
+  .card-academic {
+    flex-direction: row;
+  }
+
+  .card-academic__details {
+    align-items: flex-start;
+  }
+
+  .card-academic__details p {
+    text-align: left;
+  }  
 }
