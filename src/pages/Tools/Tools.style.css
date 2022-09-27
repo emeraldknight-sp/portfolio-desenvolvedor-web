@@ -1,0 +1,13 @@
+.section__tools .container {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+
+.section__tools__content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  gap: 20px;
+}

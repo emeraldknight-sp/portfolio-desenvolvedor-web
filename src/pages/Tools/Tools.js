@@ -30,9 +30,12 @@ export const Tools = () => {
       <Main>
         <section className="section__tools">
           <Container>
-            <div className="section__tools">
-              <h5 className="section__tools-title">Estilização</h5>
-              <div className="skills__box">
+            <h3 className="section__tools__title">
+              Ferramentas utilizadas para desenvolvimento
+            </h3>
+            <div className="section__tools__box">
+              <h4 className="section__tools__subtitle">Front-end</h4>
+              <div className="section__tools__content">
                 {front.map((item) => (
                   <CardSkill
                     key={item.id}
@@ -42,9 +45,9 @@ export const Tools = () => {
                 ))}
               </div>
             </div>
-            <div className="section__tools">
-              <h5 className="section__tools-title">Estilização</h5>
-              <div className="skills__box">
+            <div className="section__tools__box">
+              <h4 className="section__tools__subtitle">Back-end</h4>
+              <div className="section__tools__content">
                 {back.map((item) => (
                   <CardSkill
                     key={item.id}
@@ -54,9 +57,9 @@ export const Tools = () => {
                 ))}
               </div>
             </div>
-            <div className="section__tools">
-              <h5 className="section__tools-title">Estilização</h5>
-              <div className="skills__box">
+            <div className="section__tools__box">
+              <h4 className="section__tools__subtitle">Estilização</h4>
+              <div className="section__tools__content">
                 {stylization.map((item) => (
                   <CardSkill
                     key={item.id}
@@ -66,9 +69,11 @@ export const Tools = () => {
                 ))}
               </div>
             </div>
-            <div className="section__tools">
-              <h5 className="section__tools-title">Estilização</h5>
-              <div className="skills__box">
+            <div className="section__tools__box">
+              <h4 className="section__tools__subtitle">
+                Frameworks no front-end
+              </h4>
+              <div className="section__tools__content">
                 {frameworksFrontEnd.map((item) => (
                   <CardSkill
                     key={item.id}
@@ -78,9 +83,11 @@ export const Tools = () => {
                 ))}
               </div>
             </div>
-            <div className="section__tools">
-              <h5 className="section__tools-title">Estilização</h5>
-              <div className="skills__box">
+            <div className="section__tools__box">
+              <h4 className="section__tools__subtitle">
+                Frameworks no back-end
+              </h4>
+              <div className="section__tools__content">
                 {frameworksBackEnd.map((item) => (
                   <CardSkill
                     key={item.id}
@@ -90,9 +97,9 @@ export const Tools = () => {
                 ))}
               </div>
             </div>
-            <div className="section__tools">
-              <h5 className="section__tools-title">Estilização</h5>
-              <div className="skills__box">
+            <div className="section__tools__box">
+              <h4 className="section__tools__subtitle">Web design</h4>
+              <div className="section__tools__content">
                 {webDesign.map((item) => (
                   <CardSkill
                     key={item.id}
@@ -102,9 +109,9 @@ export const Tools = () => {
                 ))}
               </div>
             </div>
-            <div className="section__tools">
-              <h5 className="section__tools-title">Estilização</h5>
-              <div className="skills__box">
+            <div className="section__tools__box">
+              <h4 className="section__tools__subtitle">Design gráfico</h4>
+              <div className="section__tools__content">
                 {graphicDesign.map((item) => (
                   <CardSkill
                     key={item.id}
@@ -114,9 +121,11 @@ export const Tools = () => {
                 ))}
               </div>
             </div>
-            <div className="section__tools">
-              <h5 className="section__tools-title">Estilização</h5>
-              <div className="skills__box">
+            <div className="section__tools__box">
+              <h4 className="section__tools__subtitle">
+                Sistemas operacionais
+              </h4>
+              <div className="section__tools__content">
                 {systems.map((item) => (
                   <CardSkill
                     key={item.id}
@@ -126,9 +135,9 @@ export const Tools = () => {
                 ))}
               </div>
             </div>
-            <div className="section__tools">
-              <h5 className="section__tools-title">Estilização</h5>
-              <div className="skills__box">
+            <div className="section__tools__box">
+              <h4 className="section__tools__subtitle">Editores (IDEs)</h4>
+              <div className="section__tools__content">
                 {editors.map((item) => (
                   <CardSkill
                     key={item.id}
@@ -138,9 +147,11 @@ export const Tools = () => {
                 ))}
               </div>
             </div>
-            <div className="section__tools">
-              <h5 className="section__tools-title">Estilização</h5>
-              <div className="skills__box">
+            <div className="section__tools__box">
+              <h4 className="section__tools__subtitle">
+                Controle de versionamento de código
+              </h4>
+              <div className="section__tools__content">
                 {codeVersioning.map((item) => (
                   <CardSkill
                     key={item.id}
@@ -150,9 +161,11 @@ export const Tools = () => {
                 ))}
               </div>
             </div>
-            <div className="section__tools">
-              <h5 className="section__tools-title">Estilização</h5>
-              <div className="skills__box">
+            <div className="section__tools__box">
+              <h4 className="section__tools__subtitle">
+                Gerenciador de pacotes
+              </h4>
+              <div className="section__tools__content">
                 {packagingSystem.map((item) => (
                   <CardSkill
                     key={item.id}
@@ -162,9 +175,11 @@ export const Tools = () => {
                 ))}
               </div>
             </div>
-            <div className="section__tools">
-              <h5 className="section__tools-title">Estilização</h5>
-              <div className="skills__box">
+            <div className="section__tools__box">
+              <h4 className="section__tools__subtitle">
+                Formatadores de código
+              </h4>
+              <div className="section__tools__content">
                 {formatters.map((item) => (
                   <CardSkill
                     key={item.id}
@@ -174,9 +189,11 @@ export const Tools = () => {
                 ))}
               </div>
             </div>
-            <div className="section__tools">
-              <h5 className="section__tools-title">Estilização</h5>
-              <div className="skills__box">
+            <div className="section__tools__box">
+              <h4 className="section__tools__subtitle">
+                Documentação de projetos
+              </h4>
+              <div className="section__tools__content">
                 {documentation.map((item) => (
                   <CardSkill
                     key={item.id}
@@ -186,9 +203,11 @@ export const Tools = () => {
                 ))}
               </div>
             </div>
-            <div className="section__tools">
-              <h5 className="section__tools-title">Estilização</h5>
-              <div className="skills__box">
+            <div className="section__tools__box">
+              <h4 className="section__tools__subtitle">
+                Métodos de desenvolvimento e gerenciamento de projetos
+              </h4>
+              <div className="section__tools__content">
                 {methodologiesAndManagement.map((item) => (
                   <CardSkill
                     key={item.id}
@@ -198,9 +217,9 @@ export const Tools = () => {
                 ))}
               </div>
             </div>
-            <div className="section__tools">
-              <h5 className="section__tools-title">Estilização</h5>
-              <div className="skills__box">
+            <div className="section__tools__box">
+              <h4 className="section__tools__subtitle">Deploy de aplicações</h4>
+              <div className="section__tools__content">
                 {deploy.map((item) => (
                   <CardSkill
                     key={item.id}
