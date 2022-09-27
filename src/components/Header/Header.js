@@ -36,7 +36,7 @@ export const Header = () => {
   return (
     <header className="header">
       <Container>
-        <div className="header__logo">
+        <div className="header__logo" onClick={() => handleClick('/')}>
           <figure className="header__figure">
             <img className="header__image" src={Logo} alt="logo" />
           </figure>
