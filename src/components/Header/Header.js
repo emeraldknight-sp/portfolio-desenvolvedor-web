@@ -22,7 +22,7 @@ export const Header = () => {
   const [icon, setIcon] = useState(<GrMenu />)
 
   const handleClick = (page) => {
-    page === '/tools' || page === '/contact'
+    page === '/contact'
       ? toast.error('Em desenvolvimento!')
       : navigate(`${page}`)
   }

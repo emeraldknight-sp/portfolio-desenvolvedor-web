@@ -23,6 +23,7 @@
 
 .card-skill__image {
   width: 70%;
+  max-width: 200px;
 }
 
 .card-skill__title {
@@ -77,6 +78,6 @@
 
 @media (min-width: 1024px) {
   .card-skill {
-    min-width: 25%;
+    min-width: 20%;
   }
 }

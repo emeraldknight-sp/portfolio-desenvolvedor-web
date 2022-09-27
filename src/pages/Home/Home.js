@@ -18,7 +18,7 @@ export const Homepage = () => {
   const navigate = useNavigate()
 
   const handleClick = (page) => {
-    page === '/tools' || page === '/contact'
+    page === '/contact'
       ? toast.error('Página em desenvolvimento')
       : navigate(`${page}`)
   }
@@ -30,8 +30,10 @@ export const Homepage = () => {
         {/* WELCOME */}
         <section className="section__welcome">
           <Container>
-            <h1 className="welcome__title">Bem-vindo ao meu portfólio!</h1>
-            <h4 className="welcome__subtitle">
+            <h1 className="section__welcome__title">
+              Bem-vindo ao meu portfólio!
+            </h1>
+            <h4 className="section__welcome__subtitle">
               O portfólio de um desenvolvedor em desenvolvimento.
             </h4>
           </Container>
@@ -40,7 +42,7 @@ export const Homepage = () => {
         {/* ABOUT */}
         <section className="section__about">
           <Container>
-            <h3 className="about__title">Sobre</h3>
+            <h3 className="section__about__title">Sobre</h3>
             <div className="about__text">
               <p className="about__text__paragraph">
                 Formado em Ciência da Computação desde 2020, iniciei meus
@@ -60,7 +62,7 @@ export const Homepage = () => {
         {/* PROJECTS */}
         <section className="section__projects">
           <Container>
-            <h3 className="projects__title">Projetos</h3>
+            <h3 className="section__projects__title">Projetos</h3>
             <div className="skills__box">
               {projects.map((skill) => (
                 <CardProject
@@ -86,7 +88,7 @@ export const Homepage = () => {
         {/* HARD SKILLS */}
         <section className="section__hard__skills">
           <Container>
-            <h3 className="hard__skills__title">Hard Skills</h3>
+            <h3 className="section__hard__skills__title">Hard Skills</h3>
             <div className="skills__box">
               {hardSkills.map((skill) => (
                 <CardSkill
@@ -105,7 +107,7 @@ export const Homepage = () => {
         {/* SOFT SKILLS */}
         <section className="section__soft__skills">
           <Container>
-            <h3 className="soft__skills__title">Soft Skills</h3>
+            <h3 className="section__soft__skills__title">Soft Skills</h3>
             <div className="skills__box">
               {softSkills.map((skill) => (
                 <CardSkill

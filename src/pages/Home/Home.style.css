@@ -2,33 +2,46 @@
 .section__about,
 .section__hard__skills,
 .section__soft__skills,
-.section__projects {
+.section__projects,
+.section__tools {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: row;
   width: 100%;
-  padding: 15px 0;
+  padding: 30px 0;
 }
 
 .section__welcome .container,
 .section__about .container,
 .section__hard__skills .container,
 .section__soft__skills .container,
-.section__projects .container {
+.section__projects .container,
+.section__tools .container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 80%;
-  gap: 24px;
+  gap: 50px;
 }
 
-.about__title,
-.hard__skills__title,
-.soft__skills__title,
-.projects__title {
+.section__about__title,
+.section__hard__skills__title,
+.section__soft__skills__title,
+.section__projects__title,
+.section__tools__title {
   font-size: var(--heading-3);
   font-weight: bolder;
+}
+
+.section__about__subtitle,
+.section__hard__skills__subtitle,
+.section__soft__skills__subtitle,
+.section__projects__subtitle,
+.section__tools__subtitle {
+  font-size: var(--heading-4);
+  font-weight: bolder;
+  text-align: center;
 }
 
 .section__welcome {
@@ -42,12 +55,12 @@
   color: var(--white-fixed);
 }
 
-.welcome__title {
+.section__welcome__title {
   font-size: var(--heading-1);
   font-weight: bolder;
 }
 
-.welcome__subtitle {
+.section__welcome__subtitle {
   font-size: var(--heading-4);
   font-weight: bolder;
 }
