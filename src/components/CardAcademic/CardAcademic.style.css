@@ -1,0 +1,30 @@
+.card-academic {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 24px;
+}
+
+.card-academic__figure {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+}
+
+.card-academic__image {
+  max-width: 100%;
+}
+
+.card-academic__details {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.card-academic__title {
+  font-size: var(--heading-6);
+  font-weight: 600;
+}
