@@ -13,11 +13,11 @@ export const Projects = () => {
     <div className="large__container">
       <Header />
       <Main>
-        <Container>
-          <div className="about__projects">
-            <h3 className="projects__title">Projetos</h3>
+        <section className="section__projects">
+          <Container>
+            <h3 className="section__projects__title">Projetos</h3>
             <div className="completed">
-              <h4 className="projects__sub-title">Concluídos</h4>
+              <h4 className="section__projects__subtitle">Concluídos</h4>
               <div className="projects-completed">
                 {completed.length ? (
                   completed.map((project) => (
@@ -39,7 +39,9 @@ export const Projects = () => {
               </div>
             </div>
             <div className="in-progress">
-              <h4 className="projects__sub-title">Em desenvolvimento</h4>
+              <h4 className="section__projects__subtitle">
+                Em desenvolvimento
+              </h4>
               <div className="projects-in-progress">
                 {inProgress.length > 0 ? (
                   inProgress.map((project) => (
@@ -61,7 +63,7 @@ export const Projects = () => {
               </div>
             </div>
             <div className="stopped">
-              <h4 className="projects__sub-title">Parados</h4>
+              <h4 className="section__projects__subtitle">Parados</h4>
               <div className="projects-stopped">
                 {stopped.length ? (
                   stopped.map((project) => (
@@ -82,8 +84,8 @@ export const Projects = () => {
                 )}
               </div>
             </div>
-          </div>
-        </Container>
+          </Container>
+        </section>
       </Main>
       <Footer />
     </div>
