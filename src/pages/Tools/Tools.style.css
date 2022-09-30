@@ -11,3 +11,9 @@
   overflow-x: scroll;
   gap: 20px;
 }
+
+@media (min-width: 1024px) {
+  .section__tools__content {
+    justify-content: center;
+  }
+}
