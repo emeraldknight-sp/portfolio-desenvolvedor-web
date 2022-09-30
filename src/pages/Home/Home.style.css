@@ -3,7 +3,8 @@
 .section__hard__skills,
 .section__soft__skills,
 .section__projects,
-.section__tools {
+.section__tools,
+.section__contact {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -17,7 +18,8 @@
 .section__hard__skills .container,
 .section__soft__skills .container,
 .section__projects .container,
-.section__tools .container {
+.section__tools .container,
+.section__contact .container {
   display: flex;
   flex-direction: column;
   justify-content: center;

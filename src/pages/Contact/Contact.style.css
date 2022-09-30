@@ -1,0 +1,41 @@
+.green-box {
+  background-color: var(--primary-color);
+  background: radial-gradient(
+    circle,
+    rgba(34, 194, 95, 1) 19%,
+    rgba(34, 194, 133, 1) 100%
+  );
+  width: 100%;
+  height: 30%;
+  color: var(--white-fixed);
+}
+
+.white-box {
+  height: 50%;
+}
+
+.form__email {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 300px;
+  padding: 24px;
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 3px 4px 32px 0px rgba(0,0,0,0.17);
+  backdrop-filter: blur(1px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.form__email__field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form__email__input {
+  padding: 10px;
+  border: 1px solid var(--primary-color);
+  border-radius: 8px;
+  outline: none;
+}
