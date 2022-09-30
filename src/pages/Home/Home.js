@@ -71,7 +71,7 @@ export const Homepage = () => {
                   image={skill.image}
                   techs={skill.techs}
                   status={skill.status}
-                  urlGithub={skill.urlGitHub}
+                  urlGitHub={skill.urlGitHub}
                   urlVercel={skill.urlVercel}
                   project
                 />

@@ -33,12 +33,16 @@ export const CardProject = ({
         </div>
 
         <div className="card-project__buttons">
-          <Button round as="a" href={urlVercel}>
-            <SiVercel />
-          </Button>
-          <Button round as="a" href={urlGitHub}>
-            <SiGithub />
-          </Button>
+          <a href={urlVercel} target="_blank" rel="noreferrer">
+            <Button round>
+              <SiVercel />
+            </Button>
+          </a>
+          <a href={urlGitHub} target="_blank" rel="noreferrer">
+            <Button round>
+              <SiGithub />
+            </Button>
+          </a>
         </div>
       </div>
     </article>
