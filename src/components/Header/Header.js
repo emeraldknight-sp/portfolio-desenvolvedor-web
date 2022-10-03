@@ -1,33 +1,29 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 
-import { AiOutlineHome } from 'react-icons/ai'
-import { MdOutlineWorkOutline } from 'react-icons/md'
-import { BsTelephone } from 'react-icons/bs'
-import { FiTool } from 'react-icons/fi'
-import { GrClose, GrInfo } from 'react-icons/gr'
+import { GrClose } from 'react-icons/gr'
 import { GrMenu } from 'react-icons/gr'
 
-import Logo from '../../images/png/icons8-esmeralda-48.png'
-
+import { Button } from '../Button'
 import { Container } from '../Container'
+import { Menu } from '../Menu'
+
+import Logo from '../../images/png/icons8-esmeralda-48.png'
 import './Header.style.css'
 
 export const Header = () => {
   const navigate = useNavigate()
 
   const [open, setOpen] = useState(false)
-  // eslint-disable-next-line no-unused-vars
   const [icon, setIcon] = useState(<GrMenu />)
 
   const handleClick = (page) => {
     navigate(`${page}`)
   }
 
-  // eslint-disable-next-line no-unused-vars
   const handleOpenMenu = () => {
     setOpen(!open)
-    open ? setIcon(<GrClose />) : setIcon(<GrMenu />)
+    open ? setIcon(<GrMenu />) : setIcon(<GrClose />)
   }
 
   return (
@@ -37,42 +33,19 @@ export const Header = () => {
           <figure className="header__figure">
             <img className="header__image" src={Logo} alt="logo" />
           </figure>
-          <h4 className="header__title">David Almeida</h4>
+          <h5 className="header__title">David Almeida</h5>
         </div>
-        <ul className="header__menu">
-          <li className="menu__option--header" onClick={() => handleClick('/')}>
-            <AiOutlineHome />
-            <span>Home</span>
-          </li>
-          <li
-            className="menu__option--header"
-            onClick={() => handleClick('/projects')}
-          >
-            <MdOutlineWorkOutline />
-            <span>Projetos</span>
-          </li>
-          <li
-            className="menu__option--header"
-            onClick={() => handleClick('/tools')}
-          >
-            <FiTool />
-            <span>Ferramentas</span>
-          </li>
-          <li
-            className="menu__option--header"
-            onClick={() => handleClick('/about')}
-          >
-            <GrInfo />
-            <span>Sobre</span>
-          </li>
-          <li
-            className="menu__option--header"
-            onClick={() => handleClick('/contact')}
-          >
-            <BsTelephone />
-            <span>Contato</span>
-          </li>
-        </ul>
+
+        <Button
+          variant={'secondary'}
+          size={'small'}
+          icon
+          onClick={handleOpenMenu}
+        >
+          {icon}
+        </Button>
+        <Menu style="vertical" open={open} />
+        <Menu style="horizontal" />
       </Container>
     </header>
   )
