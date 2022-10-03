@@ -31,7 +31,8 @@
 .projects-completed .card-project,
 .projects-in-progress .card-project,
 .projects-stopped .card-project {
-  min-width: 100px;
+  min-width: 230px;
+  width: 300px;
   gap: 50px;
   margin: 10px;
 }
