@@ -6,68 +6,73 @@ import { Container } from '../../components/Container'
 
 import './Contact.style.css'
 
-// import emailjs from '@emailjs/browser'
+import emailjs from '@emailjs/browser'
 import toast from 'react-hot-toast'
 
 export const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault()
 
-    toast.success('Enviando')
-
-    // emailjs
-    //   .sendForm('@service_42', '@template_42', e.target, 'yKNxnAgSDRjEdo59n')
-    //   .then(
-    //     () => {
-    //       toast.success('Mensagem enviada com sucesso!')
-    //     },
-    //     (error) => {
-    //       toast.error(error.text)
-    //     },
-    //   )
+    emailjs
+      .sendForm(
+        '@service_gmail_42',
+        '@template_42',
+        e.target,
+        'oEWX7R91YexKhboLw',
+      )
+      .then(
+        () => {
+          toast.success('Mensagem enviada com sucesso!')
+        },
+        (error) => {
+          toast.error(error.message)
+        },
+      )
   }
 
   return (
     <div className="large__container">
       <Header />
       <Main>
-        <section className="white-box">
+        <section className="section__contact">
           <Container>
-            <section className="section__contact">
-              <form onSubmit={sendEmail} className="form__email">
-                <div className="form__email__field">
-                  <label>Nome</label>
-                  <input
-                    type="text"
-                    className="form__email__input"
-                    placeholder="Nome"
-                    name="name"
-                    required
-                  />
-                </div>
-                <div className="form__email__field">
-                  <label>Email</label>
-                  <input
-                    type="email"
-                    className="form__email__input"
-                    placeholder="Seu e-mail"
-                    name="email"
-                    required
-                  />
-                </div>
-                <div className="form__email__field">
-                  <label>Mensagem</label>
-                  <textarea
-                    type="text"
-                    className="form__email__input"
-                    placeholder="Sua mensagem"
-                    name="message"
-                    required
-                  />
-                </div>
-                <Button type="submit">Enviar email</Button>
-              </form>
-            </section>
+            <div>
+              <h3 className="section__contact__title">Deixe sua mensagem</h3>
+            </div>
+            <form onSubmit={(e) => sendEmail(e)} className="form__email">
+              <div className="form__email__field">
+                <label>Nome</label>
+                <input
+                  type="text"
+                  className="form__email__input"
+                  placeholder="Nome"
+                  name="name"
+                  required
+                />
+              </div>
+              <div className="form__email__field">
+                <label>Email</label>
+                <input
+                  type="email"
+                  className="form__email__input"
+                  placeholder="Seu e-mail"
+                  name="email"
+                  required
+                />
+              </div>
+              <div className="form__email__field">
+                <label>Mensagem</label>
+                <textarea
+                  type="text"
+                  className="form__email__input"
+                  placeholder="Sua mensagem"
+                  name="message"
+                  rows="4"
+                  required
+                />
+              </div>
+              <Button type="submit">Enviar email</Button>
+            </form>
           </Container>
         </section>
       </Main>

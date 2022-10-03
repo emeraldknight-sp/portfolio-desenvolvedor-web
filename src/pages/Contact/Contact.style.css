@@ -1,4 +1,4 @@
-.green-box {
+/* .green-box {
   background-color: var(--primary-color);
   background: radial-gradient(
     circle,
@@ -11,17 +11,30 @@
 }
 
 .white-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 64px;
   height: 50%;
+} */
+
+.section__contact .container {
+  align-items: center;
+}
+
+.section__contact__title {
+  text-align: center;
 }
 
 .form__email {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  width: 300px;
-  padding: 24px;
+  width: 250px;
+  padding: 16px;
   background: rgba(255, 255, 255, 0.15);
-  box-shadow: 3px 4px 32px 0px rgba(0,0,0,0.17);
+  box-shadow: 3px 4px 32px 0px rgba(0, 0, 0, 0.17);
   backdrop-filter: blur(1px);
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
@@ -38,4 +51,10 @@
   border: 1px solid var(--primary-color);
   border-radius: 8px;
   outline: none;
+}
+
+@media (min-width: 768px) {
+  .form__email {
+    width: 300px;
+  }
 }
