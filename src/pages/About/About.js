@@ -26,7 +26,7 @@ export const About = () => {
           <Container>
             <h4 className="section__about__title">Sobre</h4>
             <div className="about__content">
-              <h3 className="section__about__subtitle">Biografia</h3>
+              <h5 className="section__about__subtitle">Biografia</h5>
               <div className="about__details">
                 <div className="about__text">
                   <p>
@@ -80,7 +80,7 @@ export const About = () => {
             </div>
 
             <div className="about__content">
-              <h3 className="section__about__subtitle">Formação acadêmica</h3>
+              <h5 className="section__about__subtitle">Formação acadêmica</h5>
               <div className="section__about__cards">
                 {academic.map((item) => (
                   <CardAcademic

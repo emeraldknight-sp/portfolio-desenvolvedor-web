@@ -31,9 +31,9 @@ export const Homepage = () => {
             <h1 className="section__welcome__title">
               Bem-vindo ao meu portfólio!
             </h1>
-            <h4 className="section__welcome__subtitle">
+            <h5 className="section__welcome__subtitle">
               O portfólio de um desenvolvedor em desenvolvimento.
-            </h4>
+            </h5>
           </Container>
         </section>
 

@@ -43,7 +43,7 @@
 .section__projects__subtitle,
 .section__tools__subtitle,
 .section__contact__subtitle {
-  font-size: var(--heading-4);
+  font-size: var(--heading-5);
   font-weight: bolder;
   text-align: center;
 }

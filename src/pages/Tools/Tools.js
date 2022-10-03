@@ -34,7 +34,7 @@ export const Tools = () => {
               Ferramentas utilizadas para desenvolvimento
             </h3>
             <div className="section__tools__box">
-              <h4 className="section__tools__subtitle">Front-end</h4>
+              <h5 className="section__tools__subtitle">Front-end</h5>
               <div className="section__tools__content">
                 {front.map((item) => (
                   <CardSkill
@@ -46,7 +46,7 @@ export const Tools = () => {
               </div>
             </div>
             <div className="section__tools__box">
-              <h4 className="section__tools__subtitle">Back-end</h4>
+              <h5 className="section__tools__subtitle">Back-end</h5>
               <div className="section__tools__content">
                 {back.map((item) => (
                   <CardSkill
@@ -58,7 +58,7 @@ export const Tools = () => {
               </div>
             </div>
             <div className="section__tools__box">
-              <h4 className="section__tools__subtitle">Estilização</h4>
+              <h5 className="section__tools__subtitle">Estilização</h5>
               <div className="section__tools__content">
                 {stylization.map((item) => (
                   <CardSkill
@@ -70,9 +70,9 @@ export const Tools = () => {
               </div>
             </div>
             <div className="section__tools__box">
-              <h4 className="section__tools__subtitle">
+              <h5 className="section__tools__subtitle">
                 Frameworks no front-end
-              </h4>
+              </h5>
               <div className="section__tools__content">
                 {frameworksFrontEnd.map((item) => (
                   <CardSkill
@@ -84,9 +84,9 @@ export const Tools = () => {
               </div>
             </div>
             <div className="section__tools__box">
-              <h4 className="section__tools__subtitle">
+              <h5 className="section__tools__subtitle">
                 Frameworks no back-end
-              </h4>
+              </h5>
               <div className="section__tools__content">
                 {frameworksBackEnd.map((item) => (
                   <CardSkill
@@ -98,7 +98,7 @@ export const Tools = () => {
               </div>
             </div>
             <div className="section__tools__box">
-              <h4 className="section__tools__subtitle">Web design</h4>
+              <h5 className="section__tools__subtitle">Web design</h5>
               <div className="section__tools__content">
                 {webDesign.map((item) => (
                   <CardSkill
@@ -110,7 +110,7 @@ export const Tools = () => {
               </div>
             </div>
             <div className="section__tools__box">
-              <h4 className="section__tools__subtitle">Design gráfico</h4>
+              <h5 className="section__tools__subtitle">Design gráfico</h5>
               <div className="section__tools__content">
                 {graphicDesign.map((item) => (
                   <CardSkill
@@ -122,9 +122,9 @@ export const Tools = () => {
               </div>
             </div>
             <div className="section__tools__box">
-              <h4 className="section__tools__subtitle">
+              <h5 className="section__tools__subtitle">
                 Sistemas operacionais
-              </h4>
+              </h5>
               <div className="section__tools__content">
                 {systems.map((item) => (
                   <CardSkill
@@ -136,7 +136,7 @@ export const Tools = () => {
               </div>
             </div>
             <div className="section__tools__box">
-              <h4 className="section__tools__subtitle">Editores (IDEs)</h4>
+              <h5 className="section__tools__subtitle">Editores (IDEs)</h5>
               <div className="section__tools__content">
                 {editors.map((item) => (
                   <CardSkill
@@ -148,9 +148,9 @@ export const Tools = () => {
               </div>
             </div>
             <div className="section__tools__box">
-              <h4 className="section__tools__subtitle">
+              <h5 className="section__tools__subtitle">
                 Controle de versionamento de código
-              </h4>
+              </h5>
               <div className="section__tools__content">
                 {codeVersioning.map((item) => (
                   <CardSkill
@@ -162,9 +162,9 @@ export const Tools = () => {
               </div>
             </div>
             <div className="section__tools__box">
-              <h4 className="section__tools__subtitle">
+              <h5 className="section__tools__subtitle">
                 Gerenciador de pacotes
-              </h4>
+              </h5>
               <div className="section__tools__content">
                 {packagingSystem.map((item) => (
                   <CardSkill
@@ -176,9 +176,9 @@ export const Tools = () => {
               </div>
             </div>
             <div className="section__tools__box">
-              <h4 className="section__tools__subtitle">
+              <h5 className="section__tools__subtitle">
                 Formatadores de código
-              </h4>
+              </h5>
               <div className="section__tools__content">
                 {formatters.map((item) => (
                   <CardSkill
@@ -190,9 +190,9 @@ export const Tools = () => {
               </div>
             </div>
             <div className="section__tools__box">
-              <h4 className="section__tools__subtitle">
+              <h5 className="section__tools__subtitle">
                 Documentação de projetos
-              </h4>
+              </h5>
               <div className="section__tools__content">
                 {documentation.map((item) => (
                   <CardSkill
@@ -204,9 +204,9 @@ export const Tools = () => {
               </div>
             </div>
             <div className="section__tools__box">
-              <h4 className="section__tools__subtitle">
+              <h5 className="section__tools__subtitle">
                 Métodos de desenvolvimento e gerenciamento de projetos
-              </h4>
+              </h5>
               <div className="section__tools__content">
                 {methodologiesAndManagement.map((item) => (
                   <CardSkill
@@ -218,7 +218,7 @@ export const Tools = () => {
               </div>
             </div>
             <div className="section__tools__box">
-              <h4 className="section__tools__subtitle">Deploy de aplicações</h4>
+              <h5 className="section__tools__subtitle">Deploy de aplicações</h5>
               <div className="section__tools__content">
                 {deploy.map((item) => (
                   <CardSkill
