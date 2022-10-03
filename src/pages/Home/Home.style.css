@@ -31,7 +31,8 @@
 .section__hard__skills__title,
 .section__soft__skills__title,
 .section__projects__title,
-.section__tools__title {
+.section__tools__title,
+.section__contact__title {
   font-size: var(--heading-3);
   font-weight: bolder;
 }
@@ -40,7 +41,8 @@
 .section__hard__skills__subtitle,
 .section__soft__skills__subtitle,
 .section__projects__subtitle,
-.section__tools__subtitle {
+.section__tools__subtitle,
+.section__contact__subtitle {
   font-size: var(--heading-4);
   font-weight: bolder;
   text-align: center;

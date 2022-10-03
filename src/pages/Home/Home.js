@@ -12,15 +12,13 @@ import { CardProject } from '../../components/CardProject/CardProject'
 import { hardSkills, projects, softSkills } from './Home.mock'
 
 import './Home.style.css'
-import toast from 'react-hot-toast'
 
 export const Homepage = () => {
   const navigate = useNavigate()
 
   const handleClick = (page) => {
     page === '/contact'
-      ? toast.error('Página em desenvolvimento')
-      : navigate(`${page}`)
+    navigate(`${page}`)
   }
 
   return (
