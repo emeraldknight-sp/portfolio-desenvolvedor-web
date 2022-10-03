@@ -52,3 +52,9 @@
   color: var(--white-fixed);
   margin: 0;
 }
+
+@media (min-width: 1024px) {
+  .button--icon {
+    display: none;
+  }
+}
