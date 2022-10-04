@@ -9,7 +9,6 @@ import {
   codeVersioning,
   deploy,
   documentation,
-  editors,
   formatters,
   frameworksBackEnd,
   frameworksFrontEnd,
@@ -17,6 +16,7 @@ import {
   graphicDesign,
   methodologiesAndManagement,
   packagingSystem,
+  softwares,
   stylization,
   systems,
   webDesign,
@@ -71,7 +71,7 @@ export const Tools = () => {
             </div>
             <div className="section__tools__box">
               <h5 className="section__tools__subtitle">
-                Frameworks no front-end
+                Libs e frameworks no front-end
               </h5>
               <div className="section__tools__content">
                 {frameworksFrontEnd.map((item) => (
@@ -85,7 +85,7 @@ export const Tools = () => {
             </div>
             <div className="section__tools__box">
               <h5 className="section__tools__subtitle">
-                Frameworks no back-end
+                Libs e frameworks no back-end
               </h5>
               <div className="section__tools__content">
                 {frameworksBackEnd.map((item) => (
@@ -138,7 +138,7 @@ export const Tools = () => {
             <div className="section__tools__box">
               <h5 className="section__tools__subtitle">Editores (IDEs)</h5>
               <div className="section__tools__content">
-                {editors.map((item) => (
+                {softwares.map((item) => (
                   <CardSkill
                     key={item.id}
                     title={item.title}

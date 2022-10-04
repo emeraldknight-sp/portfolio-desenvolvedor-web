@@ -12,7 +12,7 @@ export const front = [
   {
     id: 3,
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg',
-    title: 'JavaScript ES6+',
+    title: 'JavaScript',
   },
 ]
 
@@ -32,6 +32,11 @@ export const back = [
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg',
     title: 'Firebase',
   },
+  {
+    id: 4,
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg',
+    title: 'Node.JS',
+  },
 ]
 
 export const frameworksFrontEnd = [
@@ -47,11 +52,6 @@ export const frameworksBackEnd = [
     id: 1,
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg',
     title: 'Express.JS',
-  },
-  {
-    id: 2,
-    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg',
-    title: 'Node.JS',
   },
 ]
 
@@ -122,11 +122,21 @@ export const systems = [
   },
 ]
 
-export const editors = [
+export const softwares = [
   {
     id: 1,
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original-wordmark.svg',
     title: 'VS Code',
+  },
+  {
+    id: 2,
+    icon: 'https://www.beekeeperstudio.io/assets/img/logos/bk-logo-yellow-icon-3761c77d1abf26d329e20e3b5cf05cabfa00fb9225054be62707b0693991d380.svg',
+    title: 'Beekeeper',
+  },
+  {
+    id: 3,
+    icon: 'https://www.pngitem.com/pimgs/m/463-4634376_insomnia-rest-client-icon-hd-png-download.png',
+    title: 'Insomnia',
   },
 ]
 
