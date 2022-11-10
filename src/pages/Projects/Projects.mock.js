@@ -6,7 +6,8 @@ import BurguerKenzie from '../../images/projects/kenzie-burguer.png'
 import NuKenzie from '../../images/projects/nu-kenzie.png'
 import KenzieHub from '../../images/projects/kenzie-hub.png'
 import ContaPalavras from '../../images/projects/conta-palavras.png'
-import clickJogos from '../../images/projects/click-jogos.png'
+import ClickJogos from '../../images/projects/click-jogos.png'
+import DesignSystem from '../images/projects/design-system-with-storybook.png'
 
 export const completed = [
   {
@@ -64,7 +65,17 @@ export const completed = [
     title: 'Click Jogos | DOM',
     techs: 'HTML5, CSS3, JS, DOM',
     status: 'Concluído',
-    image: clickJogos,
+    image: ClickJogos,
+  },
+  {
+    id: 10,
+    urlVercel: 'https://react-design-system-with-storybook.vercel.app/',
+    urlGitHub:
+      'https://github.com/emeraldknight-sp/react-design-story-with-storybook',
+    title: 'Ignite Lab | Design System',
+    techs: 'React, Storybook, CSS Tailwind',
+    status: 'concluído',
+    image: DesignSystem,
   },
 ]
 
