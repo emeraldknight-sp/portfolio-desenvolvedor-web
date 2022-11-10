@@ -7,7 +7,7 @@ import NuKenzie from '../../images/projects/nu-kenzie.png'
 import KenzieHub from '../../images/projects/kenzie-hub.png'
 import ContaPalavras from '../../images/projects/conta-palavras.png'
 import ClickJogos from '../../images/projects/click-jogos.png'
-import DesignSystem from '../images/projects/design-system-with-storybook.png'
+import DesignSystem from '../../images/projects/design-system-with-storybook.png'
 
 export const completed = [
   {
