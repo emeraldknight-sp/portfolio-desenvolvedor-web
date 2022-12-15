@@ -79,9 +79,7 @@ export const completed = [
   },
 ]
 
-export const stopped = []
-
-export const inProgress = [
+export const stopped = [
   {
     id: 2,
     urlVercel:
@@ -90,7 +88,7 @@ export const inProgress = [
       'https://github.com/Kenzie-Academy-Brasil-Developers/react-entrega-s3-kenzishop-com-context-api-emeraldknight-sp',
     title: 'Emerald Books | e-Commerce',
     techs: 'React, Styled-Components, Context API',
-    status: 'Interrompidos',
+    status: 'Interrompido',
     image: EmeraldBooks,
   },
   {
@@ -100,16 +98,20 @@ export const inProgress = [
       'https://github.com/Kenzie-Academy-Brasil-Developers/react-entrega-s3-kenzieshop-emeraldknight-sp',
     title: 'Kenzie Cars | e-Commerce',
     techs: 'React, Styled-Components, REDUX',
-    status: 'Interrompidos',
+    status: 'Interrompido',
     image: KenzieCars,
   },
+]
+
+export const inProgress = [
   {
     id: 5,
-    urlVercel: 'https://vercel.com/emeraldknight-sp/hamburgueria',
-    urlGitHub: 'https://github.com/emeraldknight-sp/ecommerce-kenzieburguer',
+    urlVercel: 'https://react-ecommerce-kenzie-burguer.vercel.app',
+    urlGitHub:
+      'https://github.com/emeraldknight-sp/react-ecommerce-kenzie-burguer',
     title: 'Burguer Kenzie | e-Commerce',
-    techs: 'React, CSS3',
-    status: 'Interrompidos',
+    techs: 'React, Styled-Components',
+    status: 'Desenvolvimento',
     image: BurguerKenzie,
   },
 ]
