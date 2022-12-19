@@ -8,6 +8,7 @@ import KenzieHub from '../../images/projects/kenzie-hub.png'
 import ContaPalavras from '../../images/projects/conta-palavras.png'
 import ClickJogos from '../../images/projects/click-jogos.png'
 import DesignSystem from '../../images/projects/design-system-with-storybook.png'
+import RocketPay from '../../images/projects/rocket-pay.png'
 
 export const completed = [
   {
@@ -19,15 +20,6 @@ export const completed = [
     techs: 'HTML5, CSS3, JS',
     status: 'Concluído',
     image: MundoInvertido,
-  },
-  {
-    id: 3,
-    urlVercel: 'https://star-wars-website-delta.vercel.app/',
-    urlGitHub: 'https://github.com/emeraldknight-sp/star-wars-website',
-    title: 'Star Wars | Planets API',
-    techs: 'React, Styled-Components',
-    status: 'Concluído',
-    image: StarWars,
   },
   {
     id: 6,
@@ -59,15 +51,6 @@ export const completed = [
     image: ContaPalavras,
   },
   {
-    id: 9,
-    urlVercel: 'https://emeraldknight-sp.github.io/JogosDeAzar/',
-    urlGitHub: 'https://github.com/emeraldknight-sp/JogosDeAzar',
-    title: 'Click Jogos | DOM',
-    techs: 'HTML5, CSS3, JS, DOM',
-    status: 'Concluído',
-    image: ClickJogos,
-  },
-  {
     id: 10,
     urlVercel: 'https://react-design-system-with-storybook.vercel.app/',
     urlGitHub:
@@ -76,6 +59,15 @@ export const completed = [
     techs: 'React, Storybook, CSS Tailwind',
     status: 'concluído',
     image: DesignSystem,
+  },
+  {
+    id: 11,
+    urlVercel: 'https://react-add-payment-method.vercel.app/',
+    urlGitHub: 'https://github.com/emeraldknight-sp/react-add-payment-method',
+    title: 'Rocket Pay | Logic',
+    techs: 'React, React-toastify, React-imask',
+    status: 'concluído',
+    image: RocketPay,
   },
 ]
 
@@ -92,6 +84,15 @@ export const stopped = [
     image: EmeraldBooks,
   },
   {
+    id: 3,
+    urlVercel: 'https://star-wars-website-delta.vercel.app/',
+    urlGitHub: 'https://github.com/emeraldknight-sp/star-wars-website',
+    title: 'Star Wars | Planets API',
+    techs: 'React, Styled-Components',
+    status: 'Concluído',
+    image: StarWars,
+  },
+  {
     id: 4,
     urlVercel: 'https://kenzieshop-kenzie-cars.vercel.app/',
     urlGitHub:
@@ -100,6 +101,15 @@ export const stopped = [
     techs: 'React, Styled-Components, REDUX',
     status: 'Interrompido',
     image: KenzieCars,
+  },
+  {
+    id: 9,
+    urlVercel: 'https://emeraldknight-sp.github.io/JogosDeAzar/',
+    urlGitHub: 'https://github.com/emeraldknight-sp/JogosDeAzar',
+    title: 'Click Jogos | DOM',
+    techs: 'HTML5, CSS3, JS, DOM',
+    status: 'Concluído',
+    image: ClickJogos,
   },
 ]
 
