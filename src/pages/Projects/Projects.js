@@ -1,12 +1,12 @@
-import { Container } from '../../components/Container'
-import { Header } from '../../components/Header'
-import { Main } from '../../components/Main'
-import { Footer } from '../../components/Footer'
+import { Container } from "../../components/Container";
+import { Header } from "../../components/Header";
+import { Main } from "../../components/Main";
+import { Footer } from "../../components/Footer";
 
-import { completed, inProgress, stopped } from './Projects.mock'
-import { CardProject } from '../../components/CardProject'
+import { completed, inProgress, stopped } from "./Projects.mock";
+import { CardProject } from "../../components/CardProject";
 
-import './Projects.style.css'
+import "./Projects.style.css";
 
 export const Projects = () => {
   return (
@@ -89,5 +89,5 @@ export const Projects = () => {
       </Main>
       <Footer />
     </div>
-  )
-}
+  );
+};

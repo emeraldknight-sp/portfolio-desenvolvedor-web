@@ -1,16 +1,16 @@
 // eslint-disable-next-line no-undef
-const express = require('express')
+const express = require("express");
 
-const app = express()
+const app = express();
 
-const baseDir = `./build/`
+const baseDir = `./build/`;
 
-app.use(express.static(`${baseDir}`))
+app.use(express.static(`${baseDir}`));
 
-app.get('*', (req, res) => res.sendFile('index.html', { root: baseDir }))
+app.get("*", (req, res) => res.sendFile("index.html", { root: baseDir }));
 
-const port = 3333
+const port = 3333;
 
 app.listen(port, () =>
-  console.log(`Servidor subiu com http://localhost:${port}`),
-)
+  console.log(`Servidor subiu com http://localhost:${port}`)
+);

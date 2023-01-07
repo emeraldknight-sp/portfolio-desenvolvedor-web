@@ -1,5 +1,5 @@
-import './Container.style.css'
+import "./Container.style.css";
 
 export const Container = ({ children }) => {
-  return <div className="container">{children}</div>
-}
+  return <div className="container">{children}</div>;
+};

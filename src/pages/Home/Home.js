@@ -1,25 +1,25 @@
-import { useNavigate } from 'react-router-dom'
+import { useNavigate } from "react-router-dom";
 
-import { Container } from '../../components/Container'
-import { Header } from '../../components/Header'
-import { Main } from '../../components/Main'
-import { Footer } from '../../components/Footer'
+import { Container } from "../../components/Container";
+import { Header } from "../../components/Header";
+import { Main } from "../../components/Main";
+import { Footer } from "../../components/Footer";
 
-import { Button } from '../../components/Button'
-import { CardSkill } from '../../components/CardSkill'
-import { CardProject } from '../../components/CardProject/CardProject'
+import { Button } from "../../components/Button";
+import { CardSkill } from "../../components/CardSkill";
+import { CardProject } from "../../components/CardProject/CardProject";
 
-import { hardSkills, projects, softSkills } from './Home.mock'
+import { hardSkills, projects, softSkills } from "./Home.mock";
 
-import './Home.style.css'
+import "./Home.style.css";
 
 export const Homepage = () => {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
   const handleClick = (page) => {
-    page === '/contact'
-    navigate(`${page}`)
-  }
+    page === "/contact";
+    navigate(`${page}`);
+  };
 
   return (
     <div className="large__container">
@@ -52,7 +52,7 @@ export const Homepage = () => {
               </p>
             </div>
             <div className="skills__button">
-              <Button onClick={() => handleClick('/about')}>Saiba mais</Button>
+              <Button onClick={() => handleClick("/about")}>Saiba mais</Button>
             </div>
           </Container>
         </section>
@@ -76,7 +76,7 @@ export const Homepage = () => {
               ))}
             </div>
             <div className="skills__button">
-              <Button onClick={() => handleClick('/projects')}>
+              <Button onClick={() => handleClick("/projects")}>
                 Saiba mais
               </Button>
             </div>
@@ -97,7 +97,7 @@ export const Homepage = () => {
               ))}
             </div>
             <div className="skills__button">
-              <Button onClick={() => handleClick('/tools')}>Saiba mais</Button>
+              <Button onClick={() => handleClick("/tools")}>Saiba mais</Button>
             </div>
           </Container>
         </section>
@@ -120,5 +120,5 @@ export const Homepage = () => {
       </Main>
       <Footer />
     </div>
-  )
-}
+  );
+};

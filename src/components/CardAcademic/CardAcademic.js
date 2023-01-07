@@ -1,4 +1,4 @@
-import './CardAcademic.style.css'
+import "./CardAcademic.style.css";
 
 export const CardAcademic = ({ image, name, degree, duration, study }) => {
   return (
@@ -14,5 +14,5 @@ export const CardAcademic = ({ image, name, degree, duration, study }) => {
         <p>Carga horária: {duration}</p>
       </div>
     </div>
-  )
-}
+  );
+};

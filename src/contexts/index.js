@@ -1,7 +1,7 @@
-import { MenuContextProvider } from "./SwitchOpenCloseMenu"
+import { MenuContextProvider } from "./SwitchOpenCloseMenu";
 
 const GlobalContext = ({ children }) => {
-  return <MenuContextProvider>{ children }</MenuContextProvider>
-}
+  return <MenuContextProvider>{children}</MenuContextProvider>;
+};
 
 export default GlobalContext;

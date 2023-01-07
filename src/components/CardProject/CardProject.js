@@ -1,7 +1,7 @@
-import { SiVercel, SiGithub } from 'react-icons/si'
-import { Button } from '../Button'
+import { SiVercel, SiGithub } from "react-icons/si";
+import { Button } from "../Button";
 
-import './CardProject.style.css'
+import "./CardProject.style.css";
 
 export const CardProject = ({
   title,
@@ -46,5 +46,5 @@ export const CardProject = ({
         </div>
       </div>
     </article>
-  )
-}
+  );
+};

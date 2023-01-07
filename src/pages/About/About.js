@@ -1,22 +1,22 @@
-import { useNavigate } from 'react-router-dom'
-import { Container } from '../../components/Container'
-import { Header } from '../../components/Header'
-import { Main } from '../../components/Main'
-import { Footer } from '../../components/Footer'
-import { Button } from '../../components/Button'
+import { useNavigate } from "react-router-dom";
+import { Container } from "../../components/Container";
+import { Header } from "../../components/Header";
+import { Main } from "../../components/Main";
+import { Footer } from "../../components/Footer";
+import { Button } from "../../components/Button";
 
-import './About.style.css'
+import "./About.style.css";
 
-import ProfileIcon from '../../images/png/profile-icon.png'
-import { academic } from './About.mock'
-import { CardAcademic } from '../../components/CardAcademic'
+import ProfileIcon from "../../images/png/profile-icon.png";
+import { academic } from "./About.mock";
+import { CardAcademic } from "../../components/CardAcademic";
 
 export const About = () => {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
   const handleClick = (page) => {
-    navigate(`${page}`)
-  }
+    navigate(`${page}`);
+  };
 
   return (
     <div className="large__container">
@@ -73,7 +73,7 @@ export const About = () => {
                 </div>
               </div>
               <div className="about__button">
-                <Button onClick={() => handleClick('/')}>
+                <Button onClick={() => handleClick("/")}>
                   Voltar à página inicial
                 </Button>
               </div>
@@ -99,5 +99,5 @@ export const About = () => {
       </Main>
       <Footer />
     </div>
-  )
-}
+  );
+};

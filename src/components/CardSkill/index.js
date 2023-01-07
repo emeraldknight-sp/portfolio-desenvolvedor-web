@@ -1,1 +1,1 @@
-export * from './CardSkill'
+export * from "./CardSkill";

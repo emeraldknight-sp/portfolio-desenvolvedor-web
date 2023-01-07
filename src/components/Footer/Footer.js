@@ -1,13 +1,14 @@
-import { MdOutlineKeyboardArrowUp } from 'react-icons/md'
-import { IoLogoGithub, IoLogoInstagram, IoLogoLinkedin } from 'react-icons/io'
+import { Link } from "react-router-dom";
+import { MdOutlineKeyboardArrowUp } from "react-icons/md";
+import { BsDiscord, BsInstagram, BsLinkedin, BsGithub } from "react-icons/bs";
 
-import { Container } from '../Container'
-import './Footer.style.css'
+import { Container } from "../Container";
+import "./Footer.style.css";
 
 export const Footer = () => {
   const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' })
-  }
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
 
   return (
     <footer className="footer">
@@ -15,48 +16,48 @@ export const Footer = () => {
         <p>Desenvolvido por David Almeida</p>
         <ul className="footer__menu">
           <li>
-            <a
+            <Link
               className="footer__menu__social"
-              href="https://www.linkedin.com/in/davidalmeidadev/"
+              to="https://www.linkedin.com/in/davidalmeidadev/"
               target="_blank"
               rel="noreferrer"
             >
-              <IoLogoLinkedin className="menu__social__icon" />
+              <BsLinkedin className="menu__social__icon" />
               <span>Linkedin</span>
-            </a>
+            </Link>
           </li>
           <li>
-            <a
+            <Link
               className="footer__menu__social"
-              href="https://github.com/emeraldknight-sp/"
+              to="https://github.com/emeraldknight-sp/"
               target="_blank"
               rel="noreferrer"
             >
-              <IoLogoGithub className="menu__social__icon" />
+              <BsGithub className="menu__social__icon" />
               <span>GitHub</span>
-            </a>
+            </Link>
           </li>
-          {/* <li>
-            <a
-              className="footer__menu__social"
-              href="mailto:contato.davidalmeida@outlook.com"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <MdOutlineMailOutline className="menu__social__icon" />
-              <span>Email</span>
-            </a>
-          </li> */}
           <li>
-            <a
+            <Link
               className="footer__menu__social"
-              href="https://www.instagram.com/davidalmeidadev/"
+              to="https://discord.gg/RUx9WxZ"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <BsDiscord className="menu__social__icon" />
+              <span>Discord</span>
+            </Link>
+          </li>
+          <li>
+            <Link
+              className="footer__menu__social"
+              to="https://www.instagram.com/davidalmeidadev/"
               target="_blank"
               rel="noreferrer"
             >
-              <IoLogoInstagram className="menu__social__icon" />
+              <BsInstagram className="menu__social__icon" />
               <span>Instagram</span>
-            </a>
+            </Link>
           </li>
         </ul>
         <p>contato.davidalmeida@outlook.com</p>
@@ -69,5 +70,5 @@ export const Footer = () => {
         <MdOutlineKeyboardArrowUp size={32} />
       </button>
     </footer>
-  )
-}
+  );
+};

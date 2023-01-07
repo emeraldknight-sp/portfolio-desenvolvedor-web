@@ -1,34 +1,34 @@
-import { Header } from '../../components/Header'
-import { Main } from '../../components/Main'
-import { Footer } from '../../components/Footer'
-import { Button } from '../../components/Button'
-import { Container } from '../../components/Container'
+import { Header } from "../../components/Header";
+import { Main } from "../../components/Main";
+import { Footer } from "../../components/Footer";
+import { Button } from "../../components/Button";
+import { Container } from "../../components/Container";
 
-import './Contact.style.css'
+import "./Contact.style.css";
 
-import emailjs from '@emailjs/browser'
-import toast from 'react-hot-toast'
+import emailjs from "@emailjs/browser";
+import toast from "react-hot-toast";
 
 export const Contact = () => {
   const sendEmail = (e) => {
-    e.preventDefault()
+    e.preventDefault();
 
     emailjs
       .sendForm(
-        '@service_gmail_42',
-        '@template_42',
+        "@service_gmail_42",
+        "@template_42",
         e.target,
-        'oEWX7R91YexKhboLw',
+        "oEWX7R91YexKhboLw"
       )
       .then(
         () => {
-          toast.success('Mensagem enviada com sucesso!')
+          toast.success("Mensagem enviada com sucesso!");
         },
         (error) => {
-          toast.error(error.message)
-        },
-      )
-  }
+          toast.error(error.message);
+        }
+      );
+  };
 
   return (
     <div className="large__container">
@@ -41,7 +41,7 @@ export const Contact = () => {
             </div>
             <form onSubmit={(e) => sendEmail(e)} className="form__email">
               <div className="form__email__field">
-                <label>Nome</label>
+                <label htmlFor="name">Nome</label>
                 <input
                   type="text"
                   className="form__email__input"
@@ -51,7 +51,7 @@ export const Contact = () => {
                 />
               </div>
               <div className="form__email__field">
-                <label>Email</label>
+                <label htmlFor="email">Email</label>
                 <input
                   type="email"
                   className="form__email__input"
@@ -61,7 +61,7 @@ export const Contact = () => {
                 />
               </div>
               <div className="form__email__field">
-                <label>Mensagem</label>
+                <label htmlFor="message">Mensagem</label>
                 <textarea
                   type="text"
                   className="form__email__input"
@@ -78,5 +78,5 @@ export const Contact = () => {
       </Main>
       <Footer />
     </div>
-  )
-}
+  );
+};

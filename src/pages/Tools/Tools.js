@@ -1,9 +1,9 @@
-import { Container } from '../../components/Container'
-import { Header } from '../../components/Header'
-import { Main } from '../../components/Main'
-import { Footer } from '../../components/Footer'
+import { Container } from "../../components/Container";
+import { Header } from "../../components/Header";
+import { Main } from "../../components/Main";
+import { Footer } from "../../components/Footer";
 
-import './Tools.style.css'
+import "./Tools.style.css";
 import {
   back,
   codeVersioning,
@@ -20,8 +20,8 @@ import {
   stylization,
   systems,
   webDesign,
-} from './Tools.mock'
-import { CardSkill } from '../../components/CardSkill'
+} from "./Tools.mock";
+import { CardSkill } from "../../components/CardSkill";
 
 export const Tools = () => {
   return (
@@ -234,5 +234,5 @@ export const Tools = () => {
       </Main>
       <Footer />
     </div>
-  )
-}
+  );
+};

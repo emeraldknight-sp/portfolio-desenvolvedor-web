@@ -1,1 +1,1 @@
-export * from './CardAcademic'
+export * from "./CardAcademic";

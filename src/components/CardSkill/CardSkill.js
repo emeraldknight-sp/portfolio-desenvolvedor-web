@@ -1,4 +1,4 @@
-import './CardSkill.style.css'
+import "./CardSkill.style.css";
 
 export const CardSkill = ({ title, icon, ...rest }) => {
   return (
@@ -8,5 +8,5 @@ export const CardSkill = ({ title, icon, ...rest }) => {
       </figure>
       <h5 className="card-skill__title">{title}</h5>
     </article>
-  )
-}
+  );
+};

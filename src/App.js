@@ -1,7 +1,7 @@
-import './styles/style.css'
+import "./styles/style.css";
 
-import { Toaster } from 'react-hot-toast'
-import { Root } from './routes'
+import { Toaster } from "react-hot-toast";
+import { Root } from "./routes";
 
 export const App = () => {
   return (
@@ -9,5 +9,5 @@ export const App = () => {
       <Toaster position="bottom-center" reverseOrder={true} />
       <Root />
     </>
-  )
-}
+  );
+};
