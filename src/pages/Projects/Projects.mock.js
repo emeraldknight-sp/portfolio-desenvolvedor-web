@@ -9,6 +9,7 @@ import ContaPalavras from '../../images/projects/conta-palavras.png'
 import ClickJogos from '../../images/projects/click-jogos.png'
 import DesignSystem from '../../images/projects/design-system-with-storybook.png'
 import RocketPay from '../../images/projects/rocket-pay.png'
+import Pokenext from '../../images/projects/pokenext.png'
 
 export const completed = [
   {
@@ -22,7 +23,7 @@ export const completed = [
     image: MundoInvertido,
   },
   {
-    id: 6,
+    id: 2,
     urlVercel: 'https://nu-kenzie-liart.vercel.app/',
     urlGitHub:
       'https://github.com/Kenzie-Academy-Brasil-Developers/react-entrega-s1-nu-kenzie-emeraldknight-sp',
@@ -32,7 +33,7 @@ export const completed = [
     image: NuKenzie,
   },
   {
-    id: 7,
+    id: 3,
     urlVercel: 'https://github-kenzie.vercel.app/',
     urlGitHub:
       'https://github.com/Kenzie-Academy-Brasil-Developers/react-entrega-s2-kenzie-hub-emeraldknight-sp',
@@ -42,7 +43,7 @@ export const completed = [
     image: KenzieHub,
   },
   {
-    id: 8,
+    id: 4,
     urlVercel: 'https://emeraldknight-sp.github.io/ContaPalavras/',
     urlGitHub: 'https://github.com/emeraldknight-sp/ContaPalavras',
     title: 'Counter | Logic',
@@ -51,7 +52,7 @@ export const completed = [
     image: ContaPalavras,
   },
   {
-    id: 10,
+    id: 5,
     urlVercel: 'https://react-design-system-with-storybook.vercel.app/',
     urlGitHub:
       'https://github.com/emeraldknight-sp/react-design-story-with-storybook',
@@ -61,19 +62,19 @@ export const completed = [
     image: DesignSystem,
   },
   {
-    id: 11,
-    urlVercel: 'https://react-add-payment-method.vercel.app/',
-    urlGitHub: 'https://github.com/emeraldknight-sp/react-add-payment-method',
-    title: 'Rocket Pay | Logic',
-    techs: 'React, React-toastify, React-imask',
-    status: 'concluído',
-    image: RocketPay,
+    id: 6,
+    urlVercel: 'https://emeraldknight-sp.github.io/JogosDeAzar/',
+    urlGitHub: 'https://github.com/emeraldknight-sp/JogosDeAzar',
+    title: 'Click Jogos | DOM',
+    techs: 'HTML5, CSS3, JS, DOM',
+    status: 'Concluído',
+    image: ClickJogos,
   },
 ]
 
 export const stopped = [
   {
-    id: 2,
+    id: 1,
     urlVercel:
       'https://kenzieshop-context-api-49byuege0-emeraldknight-sp.vercel.app/',
     urlGitHub:
@@ -84,7 +85,7 @@ export const stopped = [
     image: EmeraldBooks,
   },
   {
-    id: 3,
+    id: 2,
     urlVercel: 'https://star-wars-website-delta.vercel.app/',
     urlGitHub: 'https://github.com/emeraldknight-sp/star-wars-website',
     title: 'Star Wars | Planets API',
@@ -93,7 +94,7 @@ export const stopped = [
     image: StarWars,
   },
   {
-    id: 4,
+    id: 3,
     urlVercel: 'https://kenzieshop-kenzie-cars.vercel.app/',
     urlGitHub:
       'https://github.com/Kenzie-Academy-Brasil-Developers/react-entrega-s3-kenzieshop-emeraldknight-sp',
@@ -102,20 +103,11 @@ export const stopped = [
     status: 'Interrompido',
     image: KenzieCars,
   },
-  {
-    id: 9,
-    urlVercel: 'https://emeraldknight-sp.github.io/JogosDeAzar/',
-    urlGitHub: 'https://github.com/emeraldknight-sp/JogosDeAzar',
-    title: 'Click Jogos | DOM',
-    techs: 'HTML5, CSS3, JS, DOM',
-    status: 'Concluído',
-    image: ClickJogos,
-  },
 ]
 
 export const inProgress = [
   {
-    id: 5,
+    id: 1,
     urlVercel: 'https://react-ecommerce-kenzie-burguer.vercel.app',
     urlGitHub:
       'https://github.com/emeraldknight-sp/react-ecommerce-kenzie-burguer',
@@ -123,5 +115,23 @@ export const inProgress = [
     techs: 'React, Styled-Components',
     status: 'Desenvolvimento',
     image: BurguerKenzie,
+  },
+  {
+    id: 2,
+    urlVercel: 'https://react-add-payment-method.vercel.app/',
+    urlGitHub: 'https://github.com/emeraldknight-sp/react-add-payment-method',
+    title: 'Rocket Pay | Logic',
+    techs: 'React, React-toastify, React-imask',
+    status: 'concluído',
+    image: RocketPay,
+  },
+  {
+    id: 3,
+    urlVercel: 'https://next-pokenext.vercel.app/',
+    urlGitHub: 'https://github.com/emeraldknight-sp/next-pokenext',
+    title: 'Pokenext | APIs',
+    techs: 'Next, CSS Modules, Fetch',
+    status: 'Concluído',
+    image: Pokenext,
   },
 ]
