@@ -1,0 +1,17 @@
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: var(--black-fixed);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.image {
+  width: 40px;
+}
+
+.title {
+  font-size: var(--heading-5);
+}
