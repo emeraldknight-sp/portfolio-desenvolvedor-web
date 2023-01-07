@@ -34,8 +34,17 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 5px;
   cursor: pointer;
+}
+
+.menu__option--header a {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  text-decoration: none;
+  color: var(--black-fixed);
 }
 
 .menu__option--header svg {
